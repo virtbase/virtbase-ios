@@ -10,8 +10,8 @@
   <a href="https://testflight.apple.com/join/YTMUeKSy" target="_blank">
     <img alt="TestFlight" src="https://img.shields.io/badge/TestFlight-Join-black.svg?style=for-the-badge&logo=apple">
   </a>
-  <a href="https://discord.gg/ywrqTubzh5" target="_blank">
-    <img alt="Discord" src="https://img.shields.io/badge/Discord-Community-black.svg?style=for-the-badge&logo=discord">
+  <a href="https://github.com/virtbase/iOS/actions/workflows/iOS.yml" target="_blank">
+    <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/virtbase/iOS/iOS.yml?style=for-the-badge&logo=github&label=iOS+Build&color=black">
   </a>
 </p>
 
