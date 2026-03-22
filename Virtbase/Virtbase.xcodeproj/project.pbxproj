@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F5075132F6C95E600C643D6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F5075122F6C95E600C643D6 /* Localizable.xcstrings */; };
+		0F5075142F6C95E600C643D6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F5075122F6C95E600C643D6 /* Localizable.xcstrings */; };
+		0F5980F22F3E7C0E00B4602F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0F5980F12F3E7C0E00B4602F /* Alamofire */; };
+		0F5FA0B92F44B63600CEBC8A /* Virtbase.icon in Resources */ = {isa = PBXBuildFile; fileRef = 0F5FA0B82F44B63600CEBC8A /* Virtbase.icon */; };
+		0F69E2C02F5235F60027A67B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0F69E2BF2F5235F60027A67B /* Alamofire */; };
+		0FD5CC7D2F5226DD0098292E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD5CC7C2F5226DD0098292E /* WidgetKit.framework */; };
+		0FD5CC7F2F5226DD0098292E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD5CC7E2F5226DD0098292E /* SwiftUI.framework */; };
+		0FD5CC8A2F5226DE0098292E /* VirtbaseWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FD5CC7A2F5226DD0098292E /* VirtbaseWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FD5CC882F5226DE0098292E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5980C42F3E654200B4602F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FD5CC792F5226DD0098292E;
+			remoteInfo = VirtbaseWidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FD5CC8F2F5226DE0098292E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0FD5CC8A2F5226DE0098292E /* VirtbaseWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F5075122F6C95E600C643D6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		0F5980CC2F3E654200B4602F /* Virtbase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Virtbase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5FA0B82F44B63600CEBC8A /* Virtbase.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Virtbase.icon; sourceTree = "<group>"; };
+		0FD5CC7A2F5226DD0098292E /* VirtbaseWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VirtbaseWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD5CC7C2F5226DD0098292E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0FD5CC7E2F5226DD0098292E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0F5CA4662F5250E30016D8F4 /* Exceptions for "Virtbase" folder in "Virtbase" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0F5980CB2F3E654200B4602F /* Virtbase */;
+		};
+		0F5CA4682F5252D10016D8F4 /* Exceptions for "VirtbaseWidgets" folder in "Virtbase" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Control/Models/SelectServerIntent.swift,
+				Control/Models/ServerActionIntent.swift,
+				Control/Models/ServerEntity.swift,
+				Control/Models/ServerEntityQuery.swift,
+				Control/OpenVirtbaseControl.swift,
+			);
+			target = 0F5980CB2F3E654200B4602F /* Virtbase */;
+		};
+		0F69E2BD2F5235910027A67B /* Exceptions for "Virtbase" folder in "VirtbaseWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/Authentication/InterceptorModel.swift,
+				Models/Authentication/KeychainModel.swift,
+				Models/Authentication/RequestStatus.swift,
+				Models/Backup.swift,
+				Models/FirewallOptions.swift,
+				Models/FirewallRule.swift,
+				Models/Invoice.swift,
+				Models/Server.swift,
+				Models/ServerGraph.swift,
+				Models/ServerInformation.swift,
+				Models/ServerPackage.swift,
+				Models/ServerState.swift,
+				"Models/ServerState+Update.swift",
+				Models/ServerStateUpdate.swift,
+				Models/ServerStatistics.swift,
+				Models/ServerStatus.swift,
+				Models/ServerTask.swift,
+				Models/ServerTemplate.swift,
+			);
+			target = 0FD5CC792F5226DD0098292E /* VirtbaseWidgetsExtension */;
+		};
+		0FD5CC8B2F5226DE0098292E /* Exceptions for "VirtbaseWidgets" folder in "VirtbaseWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0FD5CC792F5226DD0098292E /* VirtbaseWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0F5980CE2F3E654200B4602F /* Virtbase */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0F5CA4662F5250E30016D8F4 /* Exceptions for "Virtbase" folder in "Virtbase" target */,
+				0F69E2BD2F5235910027A67B /* Exceptions for "Virtbase" folder in "VirtbaseWidgetsExtension" target */,
+			);
+			path = Virtbase;
+			sourceTree = "<group>";
+		};
+		0FD5CC802F5226DD0098292E /* VirtbaseWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0F5CA4682F5252D10016D8F4 /* Exceptions for "VirtbaseWidgets" folder in "Virtbase" target */,
+				0FD5CC8B2F5226DE0098292E /* Exceptions for "VirtbaseWidgets" folder in "VirtbaseWidgetsExtension" target */,
+			);
+			path = VirtbaseWidgets;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F5980C92F3E654200B4602F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5980F22F3E7C0E00B4602F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD5CC772F5226DD0098292E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F69E2C02F5235F60027A67B /* Alamofire in Frameworks */,
+				0FD5CC7F2F5226DD0098292E /* SwiftUI.framework in Frameworks */,
+				0FD5CC7D2F5226DD0098292E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F5980C32F3E654200B4602F = {
+			isa = PBXGroup;
+			children = (
+				0F5075122F6C95E600C643D6 /* Localizable.xcstrings */,
+				0F5FA0B82F44B63600CEBC8A /* Virtbase.icon */,
+				0F5980CE2F3E654200B4602F /* Virtbase */,
+				0FD5CC802F5226DD0098292E /* VirtbaseWidgets */,
+				0FD5CC7B2F5226DD0098292E /* Frameworks */,
+				0F5980CD2F3E654200B4602F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F5980CD2F3E654200B4602F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F5980CC2F3E654200B4602F /* Virtbase.app */,
+				0FD5CC7A2F5226DD0098292E /* VirtbaseWidgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FD5CC7B2F5226DD0098292E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD5CC7C2F5226DD0098292E /* WidgetKit.framework */,
+				0FD5CC7E2F5226DD0098292E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F5980CB2F3E654200B4602F /* Virtbase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F5980D72F3E654200B4602F /* Build configuration list for PBXNativeTarget "Virtbase" */;
+			buildPhases = (
+				0F5980C82F3E654200B4602F /* Sources */,
+				0F5980C92F3E654200B4602F /* Frameworks */,
+				0F5980CA2F3E654200B4602F /* Resources */,
+				0FD5CC8F2F5226DE0098292E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FD5CC892F5226DE0098292E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0F5980CE2F3E654200B4602F /* Virtbase */,
+			);
+			name = Virtbase;
+			packageProductDependencies = (
+				0F5980F12F3E7C0E00B4602F /* Alamofire */,
+			);
+			productName = Virtbase;
+			productReference = 0F5980CC2F3E654200B4602F /* Virtbase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FD5CC792F5226DD0098292E /* VirtbaseWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD5CC8C2F5226DE0098292E /* Build configuration list for PBXNativeTarget "VirtbaseWidgetsExtension" */;
+			buildPhases = (
+				0FD5CC762F5226DD0098292E /* Sources */,
+				0FD5CC772F5226DD0098292E /* Frameworks */,
+				0FD5CC782F5226DD0098292E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0FD5CC802F5226DD0098292E /* VirtbaseWidgets */,
+			);
+			name = VirtbaseWidgetsExtension;
+			packageProductDependencies = (
+				0F69E2BF2F5235F60027A67B /* Alamofire */,
+			);
+			productName = VirtbaseWidgetsExtension;
+			productReference = 0FD5CC7A2F5226DD0098292E /* VirtbaseWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F5980C42F3E654200B4602F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = NO;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					0F5980CB2F3E654200B4602F = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					0FD5CC792F5226DD0098292E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 0F5980C72F3E654200B4602F /* Build configuration list for PBXProject "Virtbase" */;
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				Base,
+				en,
+				pl,
+			);
+			mainGroup = 0F5980C32F3E654200B4602F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0F5980F02F3E7C0E00B4602F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0F5980CD2F3E654200B4602F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F5980CB2F3E654200B4602F /* Virtbase */,
+				0FD5CC792F5226DD0098292E /* VirtbaseWidgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F5980CA2F3E654200B4602F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5FA0B92F44B63600CEBC8A /* Virtbase.icon in Resources */,
+				0F5075132F6C95E600C643D6 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD5CC782F5226DD0098292E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5075142F6C95E600C643D6 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F5980C82F3E654200B4602F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD5CC762F5226DD0098292E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FD5CC892F5226DE0098292E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FD5CC792F5226DD0098292E /* VirtbaseWidgetsExtension */;
+			targetProxy = 0FD5CC882F5226DE0098292E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F5980D52F3E654200B4602F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6ATDHG9CA2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F5980D62F3E654200B4602F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6ATDHG9CA2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F5980D82F3E654200B4602F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Virtbase;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Virtbase/Virtbase.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 6ATDHG9CA2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Virtbase/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Virtbase;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtbase.Virtbase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F5980D92F3E654200B4602F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Virtbase;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Virtbase/Virtbase.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 6ATDHG9CA2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Virtbase/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Virtbase;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtbase.Virtbase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FD5CC8D2F5226DE0098292E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = VirtbaseWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 6ATDHG9CA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VirtbaseWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VirtbaseWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtbase.Virtbase.VirtbaseWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FD5CC8E2F5226DE0098292E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = VirtbaseWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = 6ATDHG9CA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VirtbaseWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VirtbaseWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.virtbase.Virtbase.VirtbaseWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F5980C72F3E654200B4602F /* Build configuration list for PBXProject "Virtbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F5980D52F3E654200B4602F /* Debug */,
+				0F5980D62F3E654200B4602F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F5980D72F3E654200B4602F /* Build configuration list for PBXNativeTarget "Virtbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F5980D82F3E654200B4602F /* Debug */,
+				0F5980D92F3E654200B4602F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD5CC8C2F5226DE0098292E /* Build configuration list for PBXNativeTarget "VirtbaseWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD5CC8D2F5226DE0098292E /* Debug */,
+				0FD5CC8E2F5226DE0098292E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F5980F02F3E7C0E00B4602F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F5980F12F3E7C0E00B4602F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F5980F02F3E7C0E00B4602F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0F69E2BF2F5235F60027A67B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F5980F02F3E7C0E00B4602F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0F5980C42F3E654200B4602F /* Project object */;
+}
