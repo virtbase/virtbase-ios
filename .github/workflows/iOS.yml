@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: macos-15
-    environment: Build
     defaults:
       run:
         working-directory: Virtbase
