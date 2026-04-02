@@ -39,6 +39,9 @@ struct SettingsView: View {
     @State private
     var displayDeletion: Bool = false
     
+    @State private
+    var displayDeletionError: Bool = false
+    
     var body: some View {
         NavigationStack {
             List {
@@ -141,11 +144,19 @@ struct SettingsView: View {
                     .alert("Alle Anwendungsdaten löschen?", isPresented: $displayDeletion) {
                         Button("Abbrechen", role: .cancel) {}
                         Button("Löschen", role: .destructive) {
-                            try! authentication.deauthenticate()
-                            exit(0) // anwendung beenden, speicher clearen.
+                            do {
+                                try authentication.deauthenticate()
+                            } catch {
+                                displayDeletionError = true
+                            }
                         }
                     } message: {
                         Text("Alle lokalen Daten werden entfernt, und sie werden sofort abgemeldet. Dies lässt sich nicht rückgangig machen.")
+                    }
+                    .alert("Löschen fehlgeschlagen", isPresented: $displayDeletionError) {
+                        Button("OK", role: .cancel) {}
+                    } message: {
+                        Text("Die Keychain konnte nicht geleert werden. Bitte erneut versuchen oder die App neu installieren.")
                     }
                 }
             }

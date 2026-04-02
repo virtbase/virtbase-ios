@@ -75,10 +75,20 @@ class AuthenticationModel: ObservableObject {
             .serializingData()
             .result
 
+        let success: Bool
         switch result {
         case .success:
-            self.state = .authenticated
+            success = true
         case .failure:
+            success = false
+        }
+
+        switch AuthKeychainPolicy.outcomeAfterRemoteValidation(success: success) {
+        case .validatedKeepSession:
+            self.state = .authenticated
+        case .invalidatedClearStoredKey:
+            // Do not leave a rejected or failed-validation key in the keychain after we optimistically stored it.
+            try? KeychainModel.delete()
             self.state = .deauthenticated
         }
     }

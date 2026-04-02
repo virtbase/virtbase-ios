@@ -31,11 +31,14 @@ struct HandlerView: View {
     var body: some View {
         Group {
             switch status {
-            case .succeeded, .processing, .unknown:
+            case .processing, .unknown:
                 Image(systemName: "progress.indicator")
                     .symbolRenderingMode(.hierarchical)
                     .symbolEffect(.variableColor.iterative.dimInactiveLayers.nonReversing, options: .repeat(.continuous))
                     .foregroundStyle(.secondary)
+            case .succeeded:
+                // Screens that use this view branch on .succeeded before showing content; this arm covers edge cases without a misleading spinner.
+                EmptyView()
             case .failed:
                 VStack(spacing: 5) {
                     Image(systemName: "exclamationmark.triangle.fill")
