@@ -1,0 +1,4 @@
+files:
+  - source: /Virtbase/Localizable.xcstrings
+    translation: /Virtbase/Localizable.xcstrings
+    multilingual: 1
