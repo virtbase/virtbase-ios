@@ -1594,6 +1594,9 @@
         }
       }
     },
+    "Die Keychain konnte nicht geleert werden. Bitte erneut versuchen oder die App neu installieren." : {
+
+    },
     "Diese Berechtigungen sind notwendig, damit die Virtbase App ordnungsgemäß funktionieren kann. Das Entfernen oder Einschränken dieser Berechtigungen kann zu Fehlfunktionen der App führen und unauthentifizierte Anfragen verursachen." : {
       "localizations" : {
         "en" : {
@@ -2852,6 +2855,9 @@
         }
       }
     },
+    "Löschen fehlgeschlagen" : {
+
+    },
     "Mail & Passwort" : {
       "localizations" : {
         "en" : {
@@ -3367,6 +3373,9 @@
           }
         }
       }
+    },
+    "OK" : {
+
     },
     "Online" : {
       "localizations" : {

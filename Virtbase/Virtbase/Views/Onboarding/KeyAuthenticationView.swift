@@ -47,9 +47,11 @@ struct KeyAuthenticationView: View {
                 Section("Schlüssel") {
                     if authentication.state == .deauthenticated {
                         SecureField("sk_live_…", text: $displayToken)
+                            #if os(iOS)
                             .textInputAutocapitalization(.never)
-                            .autocorrectionDisabled()
                             .submitLabel(.return)
+                            #endif
+                            .autocorrectionDisabled()
                             .monospaced()
                     } else if authentication.state == .processing {
                         HStack {
@@ -82,7 +84,11 @@ struct KeyAuthenticationView: View {
                 Section("Optionen") {
                     Button {
                         Task {
+                            #if os(iOS)
                             guard let token = UIPasteboard.general.string else { return }
+                            #elseif os(macOS)
+                            guard let token = NSPasteboard.general.string(forType: .string) else { return }
+                            #endif
                             try await authentication.authenticate(token: token)
                         }
                     } label: {
@@ -114,13 +120,13 @@ struct KeyAuthenticationView: View {
             .navigationTitle("Verifizieren")
             .navigationBarBackButtonHidden()
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .cancellationAction) {
                     Button("Zurück") {
                         dismiss()
                     }
                 }
                 
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .confirmationAction) {
                     Button("Fortfahren") {
                         Task {
                             guard !displayToken.isEmpty else { return }

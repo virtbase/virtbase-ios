@@ -65,7 +65,7 @@ struct InvoicesView: View {
             }
             .navigationTitle("Rechnungen")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .confirmationAction) {
                     Button {
                         openURL(URL(string: "https://app.virtbase.com/invoices")!)
                     } label: {

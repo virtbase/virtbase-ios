@@ -58,7 +58,7 @@ struct RdnsRecordEditorView: View {
         }
         .navigationTitle("Bearbeiten")
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
+            ToolbarItem(placement: .destructiveAction) {
                 Button(role: .destructive) {
                     Task {
                         await viewModel.deleteRecord(

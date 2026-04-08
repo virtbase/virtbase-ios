@@ -111,103 +111,114 @@ struct ServerListaProvider: TimelineProvider {
     }
 }
 
-struct ServerListWidget: Widget {
-    var body: some WidgetConfiguration {
-        StaticConfiguration(kind: "com.virtbase.ServerList", provider: ServerListaProvider()) { entry in
-            if let servers = entry.servers {
-                if !servers.isEmpty {
-                    VStack {
-                        ForEach(servers.prefix(4)) { server in
-                            HStack {
-                                Text(server.server.name)
-                                    .monospaced()
-                                    .padding(.trailing, 5)
+struct ServerListWidgetView: View {
+    
+    var servers: [WidgetServer]?
+    
+    var body: some View {
+        if let servers {
+            if !servers.isEmpty {
+                VStack {
+                    ForEach(servers.prefix(4)) { server in
+                        HStack {
+                            Text(server.server.name)
+                                .monospaced()
+                                .padding(.trailing, 5)
+                            
+                            switch server.status {
+                            case .running:
+                                Image(systemName: "play.fill")
+                                    .foregroundStyle(.green)
+                                    .font(.caption)
                                 
-                                switch server.status {
-                                case .running:
-                                    Image(systemName: "play.fill")
-                                        .foregroundStyle(.green)
-                                        .font(.caption)
-                                    
-                                    Text("Läuft")
-                                        .foregroundStyle(.secondary)
-                                        .font(.subheadline)
-                                case .none, .unknown:
-                                    Image(systemName: "questionmark")
-                                        .foregroundStyle(.gray)
-                                        .font(.caption)
-                                    
-                                    Text("Unbekannt")
-                                        .foregroundStyle(.secondary)
-                                        .font(.subheadline)
-                                case .stopped:
-                                    Image(systemName: "stop.fill")
-                                        .foregroundStyle(.red)
-                                        .font(.caption)
-                                    
-                                    Text("Gestoppt")
-                                        .foregroundStyle(.secondary)
-                                        .font(.subheadline)
-                                case .paused:
-                                    Image(systemName: "pause.fill")
-                                        .foregroundStyle(.yellow)
-                                        .font(.caption)
-                                    
-                                    Text("Pausiert")
-                                        .foregroundStyle(.secondary)
-                                        .font(.subheadline)
-                                case .suspended:
-                                    Image(systemName: "moon.fill")
-                                        .foregroundStyle(.yellow)
-                                        .font(.caption)
-                                    
-                                    Text("Suspendiert")
-                                        .foregroundStyle(.secondary)
-                                        .font(.subheadline)
-                                }
+                                Text("Läuft")
+                                    .foregroundStyle(.secondary)
+                                    .font(.subheadline)
+                            case .none, .unknown:
+                                Image(systemName: "questionmark")
+                                    .foregroundStyle(.gray)
+                                    .font(.caption)
                                 
-                                Spacer(minLength: 0)
+                                Text("Unbekannt")
+                                    .foregroundStyle(.secondary)
+                                    .font(.subheadline)
+                            case .stopped:
+                                Image(systemName: "stop.fill")
+                                    .foregroundStyle(.red)
+                                    .font(.caption)
                                 
-                                Image(systemName: "chevron.right")
+                                Text("Gestoppt")
+                                    .foregroundStyle(.secondary)
+                                    .font(.subheadline)
+                            case .paused:
+                                Image(systemName: "pause.fill")
+                                    .foregroundStyle(.yellow)
+                                    .font(.caption)
+                                
+                                Text("Pausiert")
+                                    .foregroundStyle(.secondary)
+                                    .font(.subheadline)
+                            case .suspended:
+                                Image(systemName: "moon.fill")
+                                    .foregroundStyle(.yellow)
+                                    .font(.caption)
+                                
+                                Text("Suspendiert")
                                     .foregroundStyle(.secondary)
                                     .font(.subheadline)
                             }
+                            
+                            Spacer(minLength: 0)
+                            
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(.secondary)
+                                .font(.subheadline)
                         }
-                        Spacer(minLength: 0)
                     }
-                    .padding(10)
-                } else {
-                    VStack(spacing: 5) {
-                        Image(systemName: "square.stack.3d.up.slash")
-                            .foregroundStyle(.tertiary)
-                            .font(.largeTitle)
-                        
-                        Text("Keine Server")
-                            .font(.headline)
-                        Text("Du hast noch keine Server in deinem Account hinzugefügt. Öffne Virtbase, um deinen ersten Server einzurichten.")
-                            .multilineTextAlignment(.center)
-                            .foregroundStyle(.secondary)
-                            .font(.subheadline)
-                    }
+                    Spacer(minLength: 0)
                 }
+                .padding(10)
             } else {
                 VStack(spacing: 5) {
-                    Image(systemName: "exclamationmark.triangle.fill")
+                    Image(systemName: "square.stack.3d.up.slash")
                         .foregroundStyle(.tertiary)
                         .font(.largeTitle)
                     
-                    Text("Nicht angemeldet")
+                    Text("Keine Server")
                         .font(.headline)
-                    Text("Deine Server konnten nicht geladen werden. Überprüfe deine Internetverbindung, oder ob du angemeldet bist.")
+                    Text("Du hast noch keine Server in deinem Account hinzugefügt. Öffne Virtbase, um deinen ersten Server einzurichten.")
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.secondary)
                         .font(.subheadline)
                 }
             }
+        } else {
+            VStack(spacing: 5) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .foregroundStyle(.tertiary)
+                    .font(.largeTitle)
+                
+                Text("Nicht angemeldet")
+                    .font(.headline)
+                Text("Deine Server konnten nicht geladen werden. Überprüfe deine Internetverbindung, oder ob du angemeldet bist.")
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+                    .font(.subheadline)
+            }
+        }
+    }
+}
+
+struct ServerListWidget: Widget {
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: "com.virtbase.ServerList", provider: ServerListaProvider()) { entry in
+            ServerListWidgetView(servers: entry.servers)
+                .containerBackground(for: .widget) {
+                    Color.clear
+                }
         }
         .configurationDisplayName("Meine Server")
         .description("Mit diesem Widget kannst du dir deine Server als Übersicht hinzufügen.")
         .supportedFamilies([.systemMedium])
-        .containerBackgroundRemovable()
     }
 }

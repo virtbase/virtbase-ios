@@ -252,10 +252,12 @@ struct ServerGraphWidget: Widget {
             provider: ServerGraphProvider()
         ) { entry in
             ServerGraphWidgetView(entry: entry)
+                .containerBackground(for: .widget) {
+                    Color.clear
+                }
         }
         .configurationDisplayName("Server")
         .description("Zeigt einen einzelnen Server an.")
         .supportedFamilies([.systemSmall, .systemMedium])
-        .containerBackgroundRemovable()
     }
 }

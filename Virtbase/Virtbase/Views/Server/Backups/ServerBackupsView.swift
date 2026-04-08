@@ -51,7 +51,7 @@ struct ServerBackupsView: View {
             }
             .navigationTitle("Backups")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .confirmationAction) {
                     Button("Erstellen") {
                         displayCreation = true
                     }

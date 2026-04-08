@@ -95,7 +95,7 @@ struct KeyOnboardingView: View {
             .navigationTitle("Anmelden")
             .interactiveDismissDisabled()
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .cancellationAction) {
                     
                     // does absolutely nothing
                     // used for interface continuity
@@ -103,7 +103,7 @@ struct KeyOnboardingView: View {
                         .disabled(true)
                 }
                 
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .confirmationAction) {
                     NavigationLink("Fortfahren") {
                         KeyPermissionsView()
                     }

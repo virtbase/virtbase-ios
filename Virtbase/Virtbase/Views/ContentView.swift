@@ -74,7 +74,7 @@ struct ContentView: View {
             .navigationTitle("Server")
             .toolbar {
                 
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .secondaryAction) {
                     NavigationLink {
                         SettingsView()
                     } label: {
@@ -82,9 +82,9 @@ struct ContentView: View {
                     }
                 }
                 
-                ToolbarSpacer(.fixed, placement: .topBarLeading)
+                ToolbarSpacer(.fixed, placement: .primaryAction)
                 
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .primaryAction) {
                     Menu {
                         
                         Button {
@@ -122,7 +122,7 @@ struct ContentView: View {
                     }
                 }
                 
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .confirmationAction) {
                     Button {
                         openURL(URL(string: "https://virtbase.com/de")!)
                     } label: {

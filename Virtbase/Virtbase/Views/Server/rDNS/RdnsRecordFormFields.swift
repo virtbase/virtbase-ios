@@ -32,11 +32,15 @@ struct RdnsRecordFormFields: View {
     var body: some View {
         Section("Eintrag") {
             TextField("Host", text: $hostname)
+                #if os(iOS)
                 .textInputAutocapitalization(.never)
+                #endif
                 .autocorrectionDisabled()
             
             TextField("Adresse", text: $ip)
+                #if os(iOS)
                 .textInputAutocapitalization(.never)
+                #endif
                 .autocorrectionDisabled()
         }
     }

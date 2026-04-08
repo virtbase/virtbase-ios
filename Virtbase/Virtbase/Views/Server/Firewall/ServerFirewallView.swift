@@ -143,7 +143,9 @@ struct ServerFirewallView: View {
             }
             .navigationTitle("Firewall")
             .toolbar {
+                #if os(iOS)
                 EditButton()
+                #endif
                 
                 Button {
                     displayRuleCreation = true

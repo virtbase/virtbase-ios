@@ -81,7 +81,7 @@ struct ServerRdnsView: View {
             }
             .navigationTitle("rDNS")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .confirmationAction) {
                     Button {
                         displayCreation = true
                     } label: {

@@ -134,15 +134,15 @@ struct ServerDetailView: View {
             }
             .navigationTitle(server.name)
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .primaryAction) {
                     Button("Bearbeiten") {
                         displayEdit.toggle()
                     }
                 }
                 
-                ToolbarSpacer(.fixed, placement: .topBarTrailing)
+                ToolbarSpacer(.fixed, placement: .primaryAction)
                 
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .primaryAction) {
                     Button {
                         displayConsole.toggle()
                     } label: {
@@ -150,9 +150,9 @@ struct ServerDetailView: View {
                     }
                 }
                 
-                ToolbarSpacer(.fixed, placement: .topBarTrailing)
+                ToolbarSpacer(.fixed, placement: .primaryAction)
                 
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .primaryAction) {
                     Menu {
                         switch viewModel.state?.status {
                         case .running:
@@ -268,7 +268,9 @@ struct ServerDetailView: View {
         }
         .alert("Name Bearbeiten", isPresented: $displayEdit) {
             TextField(server.name, text: $editableName)
+                #if os(iOS)
                 .textInputAutocapitalization(.never)
+                #endif
                 .autocorrectionDisabled()
                 .monospaced()
             
@@ -301,9 +303,15 @@ struct ServerDetailView: View {
         } message: {
             Text("Alle Daten auf dem Server werden gelöscht. Dies lässt sich nicht rückgangig machen.")
         }
+        #if os(iOS)
         .fullScreenCover(isPresented: $displayConsole) {
             ServerConsoleView(server: server)
         }
+        #elseif os(macOS)
+        .sheet(isPresented: $displayConsole) {
+            ServerConsoleView(server: server)
+        }
+        #endif
         .refreshable {
             Upstream.refresh()
         }

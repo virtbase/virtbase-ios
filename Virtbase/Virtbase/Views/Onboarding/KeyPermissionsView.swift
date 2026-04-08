@@ -183,13 +183,13 @@ struct KeyPermissionsView: View {
             .navigationTitle("Berechtigungen")
             .navigationBarBackButtonHidden()
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .cancellationAction) {
                     Button("Zurück") {
                         dismiss()
                     }
                 }
-                
-                ToolbarItem(placement: .topBarTrailing) {
+                    
+                ToolbarItem(placement: .confirmationAction) {
                     NavigationLink("Fortfahren") {
                         KeyAuthenticationView()
                     }

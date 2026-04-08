@@ -66,16 +66,22 @@ struct FirewallRuleFormFields: View {
             }
             
             TextField("Quellport", text: $sport)
+                #if os(iOS)
                 .textInputAutocapitalization(.never)
+                #endif
                 .autocorrectionDisabled()
             
             TextField("Zielport", text: $dport)
+                #if os(iOS)
                 .textInputAutocapitalization(.never)
+                #endif
                 .autocorrectionDisabled()
             
             if proto == .icmp {
                 TextField("ICMP-Typ", text: $icmpType)
+                    #if os(iOS)
                     .textInputAutocapitalization(.never)
+                    #endif
                     .autocorrectionDisabled()
             }
         } header: {

@@ -53,7 +53,9 @@ struct BackupCreationSheet: View {
                 }
             }
             .navigationTitle("Neues Backup")
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Abbrechen") {

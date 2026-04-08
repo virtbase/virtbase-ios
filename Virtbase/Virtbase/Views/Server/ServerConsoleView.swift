@@ -49,7 +49,7 @@ struct ServerConsoleView: View {
             }
             .toolbar {
                 
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .primaryAction) {
                     Button {
                         Task {
                             self.console = try await Server.console(
@@ -62,9 +62,7 @@ struct ServerConsoleView: View {
                     }
                 }
                 
-                ToolbarSpacer(.fixed, placement: .topBarTrailing)
-                
-                ToolbarItem(placement: .topBarTrailing) {
+                ToolbarItem(placement: .cancellationAction) {
                     Button("Beenden") {
                         dismiss()
                     }
@@ -85,7 +83,26 @@ struct ServerConsoleView: View {
     }
 }
 
-private struct ConsoleWebView: UIViewRepresentable {
+#if os(macOS)
+private struct ConsoleWebView: NSViewRepresentable {
+    
+    let url: URL
+    
+    func makeNSView(context: Context) -> WKWebView {
+        let config = WKWebViewConfiguration()
+        
+        let webView = WKWebView(frame: .zero, configuration: config)
+        webView.setValue(false, forKey: "drawsBackground")
+        webView.layer?.backgroundColor = NSColor.black.cgColor
+        return webView
+    }
+    
+    func updateNSView(_ webView: WKWebView, context: Context) {
+        webView.load(URLRequest(url: url))
+    }
+}
+#elseif os(iOS)
+struct ConsoleWebView: UIViewRepresentable {
     
     let url: URL
     
@@ -104,3 +121,4 @@ private struct ConsoleWebView: UIViewRepresentable {
         webView.load(URLRequest(url: url))
     }
 }
+#endif
