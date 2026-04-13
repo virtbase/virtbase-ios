@@ -44,11 +44,12 @@ class BackupsViewModel: ObservableObject {
         server: Server
     ) async {
         self.status = .processing
-        
+
+        // TODO: Implement pagination
         let address = (
             "https://virtbase.com/api/v1"
             + "/kvm/\(server.id)/backups"
-            + "?per_page=9007199254740991"
+            + "?per_page=100"
         )
         
         // for some reason this specific enpoints uses iso8601
