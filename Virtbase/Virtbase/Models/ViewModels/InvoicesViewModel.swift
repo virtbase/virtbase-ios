@@ -27,9 +27,6 @@ import Alamofire
 import Combine
 
 class InvoicesViewModel: ObservableObject {
-
-    /// Upper bound for one request; avoids JS Number.MAX-style values that can confuse APIs. Add pagination if users exceed this.
-    private static let invoicePageSize = 500
     
     @Published
     var status: RequestStatus = .unknown
@@ -41,11 +38,12 @@ class InvoicesViewModel: ObservableObject {
         session: Session
     ) async {
         self.status = .processing
-        
+
+        // TODO: Implement pagination
         let address = (
             "https://virtbase.com/api/v1"
             + "/invoices"
-            + "?per_page=\(Self.invoicePageSize)"
+            + "?per_page=100"
         )
         
         // for some reason this specific enpoints uses iso8601
