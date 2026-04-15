@@ -74,7 +74,7 @@ struct ContentView: View {
             .navigationTitle("Server")
             .toolbar {
                 
-                ToolbarItem(placement: .secondaryAction) {
+                ToolbarItem(placement: .primaryAction) {
                     NavigationLink {
                         SettingsView()
                     } label: {
