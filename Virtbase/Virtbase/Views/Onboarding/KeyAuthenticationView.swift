@@ -103,7 +103,7 @@ struct KeyAuthenticationView: View {
                     } .buttonStyle(.plain)
                     
                     Button {
-                        let url = URL(string: "https://app.virtbase.com/account/settings/api")!
+                        let url = URL(string: Configuration.BASE_URL + "/account/settings/api")!
                         openURL(url)
                     } label: {
                         HStack {

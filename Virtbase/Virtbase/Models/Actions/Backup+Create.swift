@@ -36,6 +36,12 @@ nonisolated struct BackupCreateRequest: Codable {
     let name: String
     let isLocked: Bool
     let mode: BackupCreationMode
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case isLocked = "is_locked"
+        case mode
+    }
 }
 
 extension Backup {
@@ -48,8 +54,8 @@ extension Backup {
     ) async throws {
 
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/backups"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/backups"
         )
 
         let body = BackupCreateRequest(

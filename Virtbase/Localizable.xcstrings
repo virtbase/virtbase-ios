@@ -594,6 +594,12 @@
         }
       }
     },
+    "Akzent" : {
+
+    },
+    "Akzentfarbe" : {
+
+    },
     "Akzeptieren" : {
       "localizations" : {
         "en" : {
@@ -640,6 +646,7 @@
       "shouldTranslate" : false
     },
     "Alle" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -708,6 +715,7 @@
       }
     },
     "Alle Daten auf dem Server werden gelöscht. Dies lässt sich nicht rückgangig machen." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -876,6 +884,9 @@
           }
         }
       }
+    },
+    "Angebote" : {
+
     },
     "Anmelden" : {
       "localizations" : {
@@ -2004,6 +2015,9 @@
           }
         }
       }
+    },
+    "Farben" : {
+
     },
     "Fehlgeschlagen" : {
       "localizations" : {
@@ -4160,6 +4174,7 @@
       }
     },
     "Server '%@' löschen?" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

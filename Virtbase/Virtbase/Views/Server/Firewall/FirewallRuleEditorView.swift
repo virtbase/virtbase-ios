@@ -36,7 +36,7 @@ struct FirewallRuleEditorView: View {
     
     @State private var type: FirewallRuleType
     @State private var action: FirewallOptions.Action
-    @State private var proto: FirewallProtocol?
+    @State private var proto: FirewallProtocol
     @State private var sport: String
     @State private var dport: String
     @State private var comment: String
@@ -56,11 +56,11 @@ struct FirewallRuleEditorView: View {
         
         _type = State(initialValue: rule.type)
         _action = State(initialValue: rule.action)
-        _proto = State(initialValue: rule.protocol)
+        _proto = State(initialValue: rule.protocol ?? .tcp)
         _sport = State(initialValue: rule.source ?? "")
         _dport = State(initialValue: rule.destination ?? "")
         _comment = State(initialValue: rule.description ?? "")
-        _enabled = State(initialValue: (rule.enabled ?? 1) == 1)
+        _enabled = State(initialValue: rule.enabled ?? true)
         _icmpType = State(initialValue: rule.icmpType ?? "any")
     }
     
@@ -82,9 +82,10 @@ struct FirewallRuleEditorView: View {
             ToolbarItem(placement: .confirmationAction) {
                 Button("Speichern") {
                     let request = FirewallRuleUpdateRequest(
-                        type: type,
+                        direction: type,
+                        pos: rule.position,
                         action: action,
-                        enable: enabled ? 1 : 0,
+                        enabled: enabled,
                         comment: comment,
                         proto: proto,
                         digest: rule.digest,
@@ -93,6 +94,8 @@ struct FirewallRuleEditorView: View {
                         icmpType: (proto == .icmp ? icmpType : nil)
                     )
                     
+                    dismiss()
+                    
                     Task {
                         await viewModel.updateRule(
                             session: session,
@@ -100,9 +103,9 @@ struct FirewallRuleEditorView: View {
                             pos: rule.position,
                             request: request
                         )
-                        dismiss()
                     }
                 }
+                .disabled(comment.count > 64)
             }
         }
     }

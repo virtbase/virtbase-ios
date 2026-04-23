@@ -33,8 +33,8 @@ extension ServerState {
         status: ServerStateUpdate
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/status"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/status"
         )
         
         let _ = try await session.request(
@@ -44,7 +44,7 @@ extension ServerState {
             encoder: JSONParameterEncoder.default,
         )
         .validate()
-        .serializingString()
+        .serializingData(emptyResponseCodes: [200])
         .value
     }
 }

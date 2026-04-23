@@ -41,12 +41,12 @@ class ServerRecordsViewModel: ObservableObject {
         self.status = .processing
         
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/rdns/records"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/rdns/records"
         )
         
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .secondsSince1970
+        decoder.dateDecodingStrategy = .iso8601
         
         guard let records = try? await session.request(
             address,
@@ -54,10 +54,10 @@ class ServerRecordsViewModel: ObservableObject {
         )
         .validate()
         .serializingDecodable(
-            [ServerRecord].self,
+            ServerRecordsResponse.self,
             decoder: decoder
         )
-        .value else {
+        .value.records else {
             self.status = .failed
             return
         }

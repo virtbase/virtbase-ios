@@ -39,8 +39,9 @@ class ServersViewModel: ObservableObject {
         self.status = .processing
         
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/owned"
+            Configuration.BASE_URL
+            + "/servers"
+            + "?per_page=100"
         )
         
         guard let servers = try? await session.request(
@@ -48,8 +49,8 @@ class ServersViewModel: ObservableObject {
             method: .get
         )
         .validate()
-        .serializingDecodable([Server].self)
-        .value else {
+        .serializingDecodable(ServersResponse.self)
+        .value.servers else {
             self.status = .failed
             return
         }

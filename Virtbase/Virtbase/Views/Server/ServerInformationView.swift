@@ -72,7 +72,7 @@ struct ServerInformationView: View {
                                 .foregroundStyle(.secondary)
                                 .font(.subheadline)
                             Spacer(minLength: 0)
-                            Text(information.node.processor)
+                            Text(information.node.processor ?? "Unbekannt")
                         }
                         
                         HStack {
@@ -80,7 +80,7 @@ struct ServerInformationView: View {
                                 .foregroundStyle(.secondary)
                                 .font(.subheadline)
                             Spacer(minLength: 0)
-                            Text(information.node.memory)
+                            Text(information.node.memory ?? "Unbekannt")
                         }
                         
                         HStack {
@@ -88,7 +88,7 @@ struct ServerInformationView: View {
                                 .foregroundStyle(.secondary)
                                 .font(.subheadline)
                             Spacer(minLength: 0)
-                            Text(information.node.storage)
+                            Text(information.node.storage ?? "Unbekannt")
                         }
                         
                     }
@@ -102,12 +102,14 @@ struct ServerInformationView: View {
                             Text(information.datacenter.name)
                         }
                         
-                        HStack {
-                            Text("Land")
-                                .foregroundStyle(.secondary)
-                                .font(.subheadline)
-                            Spacer(minLength: 0)
-                            Text(information.datacenter.country)
+                        if let country = information.datacenter.country {
+                            HStack {
+                                Text("Land")
+                                    .foregroundStyle(.secondary)
+                                    .font(.subheadline)
+                                Spacer(minLength: 0)
+                                Text(country)
+                            }
                         }
                     }
                 } else {

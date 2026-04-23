@@ -41,31 +41,25 @@ class InvoicesViewModel: ObservableObject {
 
         // TODO: Implement pagination
         let address = (
-            "https://virtbase.com/api/v1"
+            Configuration.BASE_URL
             + "/invoices"
             + "?per_page=100"
         )
         
-        // for some reason this specific enpoints uses iso8601
-        // most others use secondsSinceOrigin
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        
-        guard let invoices = try? await session.request(
-            address,
-            method: .get
-        )
-        .validate()
-        .serializingDecodable(
-            Invoices.self,
-            decoder: decoder
-        )
-        .value.invoices else {
+        do {
+            let data = try await session.request(
+                address,
+                method: .get
+            )
+            .validate()
+            .serializingData()
+            .value
+            
+            let decoder = JSONDecoder()
+            self.invoices = try decoder.decode(Invoices.self, from: data).invoices
+            self.status = .succeeded
+        } catch {
             self.status = .failed
-            return
         }
-        
-        self.invoices = invoices
-        self.status = .succeeded
     }
 }

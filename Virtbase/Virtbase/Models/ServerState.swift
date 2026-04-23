@@ -24,8 +24,8 @@
 
 import Foundation
 
-nonisolated struct ServerState: Decodable {
-    var status: ServerStatus
+nonisolated struct ServerStatus: Decodable {
+    var status: ServerState
     var statistics: ServerStatistics?
     var task: ServerTask?
     var installed: String?
@@ -33,11 +33,15 @@ nonisolated struct ServerState: Decodable {
     var terminates: String?
     
     enum CodingKeys: String, CodingKey {
-        case status = "status"
+        case status = "state"
         case statistics = "stats"
         case task = "task"
-        case installed = "installedAt"
-        case suspended = "suspendedAt"
-        case terminates = "terminatesAt"
+        case installed = "installed_at"
+        case suspended = "suspended_at"
+        case terminates = "terminates_at"
     }
+}
+
+nonisolated struct ServerStatusResponse: Decodable {
+    var status: ServerStatus
 }

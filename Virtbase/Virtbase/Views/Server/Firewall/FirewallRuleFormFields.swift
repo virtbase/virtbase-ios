@@ -31,7 +31,7 @@ struct FirewallRuleFormFields: View {
     @Binding var action: FirewallOptions.Action
     @Binding var enabled: Bool
     @Binding var comment: String
-    @Binding var proto: FirewallProtocol?
+    @Binding var proto: FirewallProtocol
     @Binding var sport: String
     @Binding var dport: String
     @Binding var icmpType: String
@@ -58,10 +58,9 @@ struct FirewallRuleFormFields: View {
         
         Section {
             Picker("Protokoll", selection: $proto) {
-                Text("Alle").tag(FirewallProtocol?.none)
                 ForEach(FirewallProtocolPickerSupport.selectableProtocols, id: \.self) { p in
                     Text(FirewallProtocolPickerSupport.label(for: p))
-                        .tag(FirewallProtocol?.some(p))
+                        .tag(p)
                 }
             }
             

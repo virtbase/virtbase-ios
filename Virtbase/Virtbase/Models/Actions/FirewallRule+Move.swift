@@ -39,8 +39,9 @@ extension FirewallRule {
         digest: String?
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/firewall/rules/\(pos)/move"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/firewall"
+            + "/rules/\(pos)/move"
         )
         
         let body = FirewallRuleMoveRequest(
@@ -59,4 +60,3 @@ extension FirewallRule {
         .value
     }
 }
-

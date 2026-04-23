@@ -31,8 +31,8 @@ extension RdnsRecord {
         server: Server
     ) async throws -> [RdnsRecord] {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/rdns/records"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/rdns/records"
         )
         
         let response = try await session.request(
@@ -43,7 +43,6 @@ extension RdnsRecord {
         .serializingDecodable(RdnsRecordsListResponse.self)
         .value
         
-        return response.ptrRecords
+        return response.records
     }
 }
-

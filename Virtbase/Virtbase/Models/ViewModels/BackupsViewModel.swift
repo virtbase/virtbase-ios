@@ -39,6 +39,11 @@ class BackupsViewModel: ObservableObject {
     @Published
     var backups: [Backup]?
     
+    @MainActor
+    private func setFailed() {
+        status = .failed
+    }
+    
     func fetch(
         session: Session,
         server: Server
@@ -47,8 +52,8 @@ class BackupsViewModel: ObservableObject {
 
         // TODO: Implement pagination
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/backups"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/backups"
             + "?per_page=100"
         )
         
@@ -73,5 +78,42 @@ class BackupsViewModel: ObservableObject {
     
         self.backups = backups
         self.status = .succeeded
+    }
+    
+    func toggleLock(
+        session: Session,
+        server: Server,
+        backup: Backup
+    ) async {
+        do {
+            try await Backup.toggle(
+                session: session,
+                server: server,
+                backup: backup
+            )
+            
+            await fetch(session: session, server: server)
+        } catch {
+            setFailed()
+        }
+    }
+    
+    func delete(
+        session: Session,
+        server: Server,
+        backup: Backup
+    ) async {
+        do {
+            try await Backup.delete(
+                session: session,
+                server: server,
+                backup: backup
+            )
+            
+            backups?.removeAll { $0.id == backup.id }
+            await fetch(session: session, server: server)
+        } catch {
+            setFailed()
+        }
     }
 }

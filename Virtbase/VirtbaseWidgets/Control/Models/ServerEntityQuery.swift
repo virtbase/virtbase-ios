@@ -42,12 +42,13 @@ struct ServerEntityQuery: EntityQuery {
         )
         
         let servers = try await session.request(
-            "https://virtbase.com/api/v1/kvm/owned",
+            Configuration.BASE_URL
+            + "/servers?per_page=100",
             method: .get
         )
         .validate()
-        .serializingDecodable([Server].self)
-        .value
+        .serializingDecodable(ServersResponse.self)
+        .value.servers
 
         return servers.map { ServerEntity(id: $0.id, name: $0.name, server: $0) }
     }

@@ -87,17 +87,10 @@ struct BackupListRow: View {
             if let locked = backup.locked {
                 Button {
                     Task {
-                        try await Backup.toggle(
+                        await viewModel.toggleLock(
                             session: authentication.session,
                             server: server,
                             backup: backup
-                        )
-                        
-                        try await Task.sleep(nanoseconds: UInt64(1e+9))
-                        
-                        await viewModel.fetch(
-                            session: authentication.session,
-                            server: server
                         )
                     }
                 } label: {
@@ -114,7 +107,7 @@ struct BackupListRow: View {
             if let locked = backup.locked {
                 Button(role: .destructive) {
                     Task {
-                        try await Backup.delete(
+                        await viewModel.delete(
                             session: authentication.session,
                             server: server,
                             backup: backup

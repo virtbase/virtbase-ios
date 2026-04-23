@@ -32,8 +32,8 @@ extension RdnsRecord {
         id: String
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/rdns/records/\(id)"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/rdns/records/\(id)"
         )
         
         let _ = try await session.request(
@@ -45,4 +45,3 @@ extension RdnsRecord {
         .value
     }
 }
-

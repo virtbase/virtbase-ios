@@ -33,8 +33,8 @@ extension Backup {
         backup: Backup
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)"
             + "/backups/\(backup.id)"
         )
 
@@ -43,7 +43,6 @@ extension Backup {
             method: .delete
         )
         .validate()
-        // We need this, otherwise Alamofire crashes
         .serializingData(emptyResponseCodes: [200])
         .value
     }

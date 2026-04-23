@@ -42,9 +42,6 @@ struct ServerDetailView: View {
     @State private
     var displayConsole: Bool = false
     
-    @State private
-    var displayErasure: Bool = false
-    
     var server: Server
     
     var body: some View {
@@ -250,10 +247,14 @@ struct ServerDetailView: View {
                             EmptyView()
                         }
                         
-                        Divider()
-                        
-                        Button(role: .destructive) {
-                            displayErasure.toggle()
+                        Button {
+                            Task {
+                                try await ServerState.update(
+                                    session: authentication.session,
+                                    server: server,
+                                    status: .reset
+                                )
+                            }
                         } label: {
                             HStack {
                                 Image(systemName: "trash")
@@ -288,20 +289,6 @@ struct ServerDetailView: View {
             .disabled(!((1...64).contains(editableName.trimmingCharacters(in: .whitespacesAndNewlines).count)))
         } message: {
             Text("Lege einen neuen Namen für deinen Server fest. Der Name darf nicht leer sein.")
-        }
-        .alert("Server '\(server.name)' löschen?", isPresented: $displayErasure) {
-            Button("Abbrechen", role: .cancel) {}
-            Button("Löschen", role: .destructive) {
-                Task {
-                    try await ServerState.update(
-                        session: authentication.session,
-                        server: server,
-                        status: .reset
-                    )
-                }
-            }
-        } message: {
-            Text("Alle Daten auf dem Server werden gelöscht. Dies lässt sich nicht rückgangig machen.")
         }
         #if os(iOS)
         .fullScreenCover(isPresented: $displayConsole) {

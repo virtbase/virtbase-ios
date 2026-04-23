@@ -45,3 +45,7 @@ nonisolated struct ServerGraph: Decodable {
         case time = "time"
     }
 }
+
+nonisolated struct ServerGraphResponse: Decodable {
+    var data: [ServerGraph]
+}

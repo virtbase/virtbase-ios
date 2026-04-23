@@ -31,10 +31,10 @@ nonisolated struct RdnsUpsertRequest: Encodable {
 }
 
 nonisolated struct RdnsUpsertResponse: Codable {
-    let ptrRecord: RdnsRecord
+    let record: RdnsRecord
     
     enum CodingKeys: String, CodingKey {
-        case ptrRecord = "ptr_record"
+        case record
     }
 }
 
@@ -46,8 +46,8 @@ extension RdnsRecord {
         ip: String
     ) async throws -> RdnsRecord {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/rdns/records"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/rdns/records"
         )
         
         let request = RdnsUpsertRequest(
@@ -65,7 +65,6 @@ extension RdnsRecord {
         .serializingDecodable(RdnsUpsertResponse.self)
         .value
         
-        return response.ptrRecord
+        return response.record
     }
 }
-

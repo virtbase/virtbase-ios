@@ -31,7 +31,7 @@ class ServerStateViewModel: ObservableObject {
     var status: RequestStatus = .unknown
     
     @Published
-    var state: ServerState?
+    var state: ServerStatus?
     
     func fetch(
         session: Session,
@@ -40,8 +40,8 @@ class ServerStateViewModel: ObservableObject {
         self.status = .processing
         
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/status"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/status"
         )
         
         guard let state = try? await session.request(
@@ -49,8 +49,8 @@ class ServerStateViewModel: ObservableObject {
             method: .get
         )
         .validate()
-        .serializingDecodable(ServerState.self)
-        .value else {
+        .serializingDecodable(ServerStatusResponse.self)
+        .value.status else {
             self.status = .failed
             return
         }

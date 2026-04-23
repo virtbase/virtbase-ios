@@ -30,7 +30,7 @@ struct FirewallRuleRow: View {
     
     var body: some View {
         HStack {
-            if let enabled = rule.enabled, enabled == 1 {
+            if rule.enabled ?? true {
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundStyle(.green)
                     .font(.subheadline)

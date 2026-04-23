@@ -49,13 +49,13 @@ class FirewallViewModel: ObservableObject {
         self.status = .processing
         
         let address_options = (
-            "https://virtbase.com/api/v1/kvm/"
-            + "\(server.id)/firewall/options"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/firewall/options"
         )
         
         let address_rules = (
-            "https://virtbase.com/api/v1/kvm/"
-            + "\(server.id)/firewall/rules"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/firewall/rules"
         )
         
         guard let options = try? await session.request(
@@ -63,8 +63,8 @@ class FirewallViewModel: ObservableObject {
             method: .get
         )
         .validate()
-        .serializingDecodable(FirewallOptions.self)
-        .value else {
+        .serializingDecodable(FirewallOptionsResponse.self)
+        .value.options else {
             self.status = .failed
             return
         }
@@ -74,8 +74,8 @@ class FirewallViewModel: ObservableObject {
             method: .get
         )
         .validate()
-        .serializingDecodable([FirewallRule].self)
-        .value else {
+        .serializingDecodable(FirewallRulesResponse.self)
+        .value.rules else {
             self.status = .failed
             return
         }

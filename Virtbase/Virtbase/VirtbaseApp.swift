@@ -31,7 +31,19 @@ struct VirtbaseApp: App {
     var authenticationModel: AuthenticationModel
     = AuthenticationModel()
     
-    @State private var refreshUpstream = 0
+    @AppStorage("application.accent")
+    private var accent: Int = 0
+    
+    var tint: Color? {
+        switch accent {
+        case 1: .red
+        case 2: .orange
+        case 3: .blue
+        case 4: .green
+        case 5: .mint
+        default: nil
+        }
+    }
     
     var body: some Scene {
         WindowGroup {
@@ -45,6 +57,7 @@ struct VirtbaseApp: App {
                     ProgressView()
                 }
             }
+            .tint(tint)
             .environmentObject(authenticationModel)
             .task {
                 await authenticationModel.refresh()

@@ -26,16 +26,16 @@ import Foundation
 
 nonisolated struct ServerPackage: Identifiable, Decodable {
     var id: String
+    var name: String?
     var cores: Int
     var memory: Int
     var storage: Int
-    var bandwidth: Int
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
+        case name = "name"
         case cores = "cores"
         case memory = "memory"
         case storage = "storage"
-        case bandwidth = "netrate"
     }
 }

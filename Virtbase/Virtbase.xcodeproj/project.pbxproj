@@ -76,6 +76,7 @@
 				Models/Authentication/KeychainModel.swift,
 				Models/Authentication/RequestStatus.swift,
 				Models/Backup.swift,
+				Models/Configuration.swift,
 				Models/FirewallOptions.swift,
 				Models/FirewallRule.swift,
 				Models/Invoice.swift,

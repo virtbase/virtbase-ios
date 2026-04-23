@@ -22,6 +22,7 @@
  *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import Foundation
 import Alamofire
 import Combine
 
@@ -39,18 +40,25 @@ class ServerInformationViewModel: ObservableObject {
     ) async {
         self.status = .processing
         
-        let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/"
-        )
+        var components = URLComponents(string: Configuration.BASE_URL + "/servers/\(server.id)")
+        components?.queryItems = [
+            URLQueryItem(name: "expand", value: "node"),
+            URLQueryItem(name: "expand", value: "datacenter"),
+            URLQueryItem(name: "expand", value: "allocations")
+        ]
+        
+        guard let address = components?.url?.absoluteString else {
+            self.status = .failed
+            return
+        }
         
         guard let information = try? await session.request(
             address,
             method: .get
         )
         .validate()
-        .serializingDecodable(ServerInformation.self)
-        .value else {
+        .serializingDecodable(ServerInformationResponse.self)
+        .value.server else {
             self.status = .failed
             return
         }

@@ -24,7 +24,7 @@
 
 import Foundation
 
-enum ServerStatus: String, Codable {
+enum ServerState: String, Codable {
     case running = "RUNNING"
     case stopped = "STOPPED"
     case paused = "PAUSED"

@@ -26,23 +26,26 @@ import Foundation
 
 nonisolated
 struct ServerNode: Codable {
+    var id: String?
     var name: String
-    var storage: String
-    var memory: String
-    var processor: String
+    var storage: String?
+    var memory: String?
+    var processor: String?
     
     enum CodingKeys: String, CodingKey {
-        case name = "name"
-        case storage = "storageDescription"
-        case memory = "memoryDescription"
-        case processor = "cpuDescription"
+        case id
+        case name = "hostname"
+        case storage = "storage_description"
+        case memory = "memory_description"
+        case processor = "cpu_description"
     }
 }
 
 nonisolated
 struct ServerDatacenter: Codable {
+    var id: String?
     var name: String
-    var country: String
+    var country: String?
 }
 
 nonisolated
@@ -71,4 +74,9 @@ struct ServerInformation: Codable {
     var node: ServerNode
     var datacenter: ServerDatacenter
     var allocations: [ServerAllocation]
+}
+
+nonisolated
+struct ServerInformationResponse: Codable {
+    var server: ServerInformation
 }

@@ -26,7 +26,7 @@ import Foundation
 
 nonisolated struct RdnsRecord: Identifiable, Codable, Hashable {
     var id: String
-    var allocation: String
+    var allocation: String?
     var ip: String
     var hostname: String
     
@@ -43,16 +43,47 @@ nonisolated struct RdnsRecord: Identifiable, Codable, Hashable {
         case createdAt = "created_at"
         case updatedAt = "updated_at"
     }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        ip = try container.decode(String.self, forKey: .ip)
+        hostname = try container.decode(String.self, forKey: .hostname)
+        createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt)
+        updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt)
+        
+        if let allocationID = try? container.decodeIfPresent(String.self, forKey: .allocation) {
+            allocation = allocationID
+        } else if let expanded = try? container.decodeIfPresent(RdnsAllocation.self, forKey: .allocation) {
+            allocation = expanded.id
+        } else {
+            allocation = nil
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encodeIfPresent(allocation, forKey: .allocation)
+        try container.encode(ip, forKey: .ip)
+        try container.encode(hostname, forKey: .hostname)
+        try container.encodeIfPresent(createdAt, forKey: .createdAt)
+        try container.encodeIfPresent(updatedAt, forKey: .updatedAt)
+    }
 }
 
 nonisolated struct RdnsRecordsListResponse: Codable {
-    var ptrRecords: [RdnsRecord]
+    var records: [RdnsRecord]
     var meta: RdnsRecordsMeta?
     
     enum CodingKeys: String, CodingKey {
-        case ptrRecords = "ptr_records"
+        case records
         case meta
     }
+}
+
+nonisolated struct RdnsAllocation: Codable, Hashable {
+    var id: String
 }
 
 nonisolated struct RdnsRecordsMeta: Codable {
@@ -80,4 +111,3 @@ nonisolated struct RdnsPagination: Codable {
         case totalEntries = "total_entries"
     }
 }
-

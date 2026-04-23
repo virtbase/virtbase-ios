@@ -69,8 +69,8 @@ struct ServerListaProvider: TimelineProvider {
     
     private func status(server: Server) async -> ServerStatus? {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/status"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/status"
         )
         
         let state = try? await session.request(
@@ -78,7 +78,7 @@ struct ServerListaProvider: TimelineProvider {
             method: .get
         )
         .validate()
-        .serializingDecodable(ServerState.self)
+        .serializingDecodable(ServerStatusResponse.self)
         .value.status
         
         return state
@@ -86,8 +86,8 @@ struct ServerListaProvider: TimelineProvider {
     
     private func servers() async -> [WidgetServer]? {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/owned"
+            Configuration.BASE_URL
+            + "/servers?per_page=100"
         )
         
         let servers = try? await session.request(
@@ -95,8 +95,8 @@ struct ServerListaProvider: TimelineProvider {
             method: .get
         )
         .validate()
-        .serializingDecodable([Server].self)
-        .value
+        .serializingDecodable(ServersResponse.self)
+        .value.servers
         
         guard let servers else { return nil }
         
@@ -125,7 +125,7 @@ struct ServerListWidgetView: View {
                                 .monospaced()
                                 .padding(.trailing, 5)
                             
-                            switch server.status {
+                            switch server.status?.status {
                             case .running:
                                 Image(systemName: "play.fill")
                                     .foregroundStyle(.green)

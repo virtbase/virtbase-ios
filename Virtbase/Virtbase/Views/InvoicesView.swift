@@ -67,7 +67,7 @@ struct InvoicesView: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button {
-                        openURL(URL(string: "https://app.virtbase.com/invoices")!)
+                        openURL(URL(string: Configuration.BASE_URL + "/invoices")!)
                     } label: {
                         HStack {
                             Image(systemName: "network")

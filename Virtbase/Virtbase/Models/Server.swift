@@ -24,18 +24,26 @@
 
 import Foundation
 
+nonisolated struct ServersResponse: Decodable {
+    var servers: [Server]
+}
+
 nonisolated struct Server: Identifiable, Decodable {
     var id: String
-    var vmid: Int
     var name: String
-    var package: ServerPackage
-    var template: ServerTemplate
+    var installedAt: String?
+    var suspendedAt: String?
+    var terminatesAt: String?
+    //var package: ServerPackage
+    //var template: ServerTemplate
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
-        case vmid = "vmid"
         case name = "name"
-        case package = "kvmPackage"
-        case template = "template"
+        case installedAt = "installed_at"
+        case suspendedAt = "suspended_at"
+        case terminatesAt = "terminates_at"
+        //case package = "kvmPackage"
+        //case template = "template"
     }
 }

@@ -30,7 +30,6 @@ enum KeychainError: LocalizedError {
     case unknown
     // something happened
     // that shouldnt have happened
-    // TODO: make verbose
     
     case corrupt
     // data fucked for some reason
@@ -52,9 +51,9 @@ final class KeychainModel {
     // holy yap yap yap yap
     private static var teamID: String? {
         let query: [CFString: Any] = [
-            kSecClass:            kSecClassGenericPassword,
-            kSecAttrService:      "bundleSeedID",
-            kSecAttrAccount:      "bundleSeedID",
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrService: "bundleSeedID",
+            kSecAttrAccount: "bundleSeedID",
             kSecReturnAttributes: true
         ]
 

@@ -25,27 +25,72 @@
 import Foundation
 import Alamofire
 
+nonisolated enum FirewallRuleRequestSanitizer {
+    static func optional(_ value: String) -> String? {
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmed.isEmpty ? nil : trimmed
+    }
+    
+    static func optional(_ value: String?) -> String? {
+        guard let value else { return nil }
+        return optional(value)
+    }
+    
+    static func required(_ value: FirewallProtocol) -> FirewallProtocol {
+        value == .all ? .tcp : value
+    }
+}
+
 nonisolated struct FirewallRuleCreateRequest: Encodable {
-    let type: FirewallRuleType
+    let direction: FirewallRuleType
+    let pos: Int
     let action: FirewallOptions.Action
-    let enable: Int
-    let comment: String
-    let proto: FirewallProtocol?
+    let enabled: Bool
+    let comment: String?
+    let proto: FirewallProtocol
     let digest: String?
-    let sport: String
-    let dport: String
+    let sport: String?
+    let dport: String?
     let icmpType: String?
     
     enum CodingKeys: String, CodingKey {
-        case type
+        case direction
+        case pos
         case action
-        case enable
+        case enabled
         case comment
         case proto
         case digest
         case sport
         case dport
-        case icmpType = "icmp-type"
+        case icmpType = "icmp_type"
+    }
+    
+    init(
+        direction: FirewallRuleType,
+        pos: Int,
+        action: FirewallOptions.Action,
+        enabled: Bool,
+        comment: String,
+        proto: FirewallProtocol,
+        digest: String?,
+        sport: String,
+        dport: String,
+        icmpType: String?
+    ) {
+        let sport = FirewallRuleRequestSanitizer.optional(sport)
+        let dport = FirewallRuleRequestSanitizer.optional(dport)
+        
+        self.direction = direction
+        self.pos = pos
+        self.action = action
+        self.enabled = enabled
+        self.comment = FirewallRuleRequestSanitizer.optional(comment)
+        self.proto = FirewallRuleRequestSanitizer.required(proto)
+        self.digest = FirewallRuleRequestSanitizer.optional(digest)
+        self.sport = sport
+        self.dport = dport
+        self.icmpType = FirewallRuleRequestSanitizer.optional(icmpType)
     }
 }
 
@@ -56,8 +101,8 @@ extension FirewallRule {
         request: FirewallRuleCreateRequest
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/firewall/rules"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/firewall/rules"
         )
         
         let _ = try await session.request(
@@ -71,4 +116,3 @@ extension FirewallRule {
         .value
     }
 }
-

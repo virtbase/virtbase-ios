@@ -41,8 +41,8 @@ class ServerGraphViewModel: ObservableObject {
         self.status = .processing
         
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/graphs"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/graphs"
             + "?timeframe=hour"
         )
         
@@ -55,10 +55,10 @@ class ServerGraphViewModel: ObservableObject {
         )
         .validate()
         .serializingDecodable(
-            [ServerGraph].self,
+            ServerGraphResponse.self,
             decoder: decoder
         )
-        .value else {
+        .value.data else {
             self.status = .failed
             return
         }

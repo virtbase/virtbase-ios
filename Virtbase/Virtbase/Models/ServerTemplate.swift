@@ -27,7 +27,7 @@ import Foundation
 nonisolated struct ServerTemplate: Identifiable, Decodable {
     var id: String
     var name: String
-    var icon: String
+    var icon: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -35,4 +35,3 @@ nonisolated struct ServerTemplate: Identifiable, Decodable {
         case icon = "icon"
     }
 }
-

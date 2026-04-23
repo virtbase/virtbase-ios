@@ -36,12 +36,18 @@ final class InterceptorModel: RequestInterceptor {
         request.headers.update(name: "Accept", value: "application/json")
         request.headers.update(name: "Content-Type", value: "application/json")
         request.headers.update(name: "User-Agent", value: "Virtbase/1.0")
-        request.headers.update(name: "Origin", value: "https://virtbase.com")
+        
+        if !Configuration.VERCEL_BYPASS.isEmpty {
+            request.headers.update(
+                name: "x-vercel-protection-bypass",
+                value: Configuration.VERCEL_BYPASS
+            )
+        }
         
         if let token = try? KeychainModel.read() {
             request.headers.update(name: "X-Virtbase-API-Key", value: token)
         }
-        
+
         completion(.success(request))
     }
 }

@@ -69,7 +69,11 @@ class AuthenticationModel: ObservableObject {
             token: token
         )
         
-        let address = "https://virtbase.com/api/v1/kvm/owned"
+        let address = (
+          Configuration.BASE_URL
+          + "/servers"
+        )
+        
         let result = await session.request(address)
             .validate(statusCode: 200..<300)
             .serializingData()
@@ -87,17 +91,20 @@ class AuthenticationModel: ObservableObject {
         case .validatedKeepSession:
             self.state = .authenticated
         case .invalidatedClearStoredKey:
-            // Do not leave a rejected or failed-validation key in the keychain after we optimistically stored it.
             try? KeychainModel.delete()
             self.state = .deauthenticated
         }
     }
     
     func refresh() async {
-        let address = "https://virtbase.com/api/v1/kvm/owned"
+        let address = (
+            Configuration.BASE_URL +
+            "/servers"
+        )
+        
         let result = await session.request(address)
             .validate(statusCode: 200..<300)
-            .serializingData()
+            .serializingString()
             .result
 
         switch result {

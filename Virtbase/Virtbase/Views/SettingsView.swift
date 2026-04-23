@@ -48,7 +48,7 @@ struct SettingsView: View {
                 
                 Section("Virtbase") {
                     Button {
-                        openURL(URL(string: "https://virtbase.com/de")!)
+                        openURL(URL(string: Configuration.WEBSITE_URL)!)
                     } label: {
                         HStack {
                             Image(systemName: "network")
@@ -67,7 +67,7 @@ struct SettingsView: View {
                     } .buttonStyle(.plain)
                     
                     Button {
-                        openURL(URL(string: "mailto:support@virtbase.com")!)
+                        openURL(URL(string: Configuration.EMAIL_URL)!)
                     } label: {
                         HStack {
                             Image(systemName: "envelope.fill")
@@ -86,7 +86,7 @@ struct SettingsView: View {
                     } .buttonStyle(.plain)
                     
                     Button {
-                        openURL(URL(string: "https://discord.gg/ywrqTubzh5")!)
+                        openURL(URL(string: Configuration.DISCORD_URL)!)
                     } label: {
                         HStack {
                             Image(systemName: "bubble.left.and.bubble.right.fill")
@@ -119,6 +119,18 @@ struct SettingsView: View {
                 } .buttonStyle(.plain)
                 
                 Section("Anwendung") {
+                    NavigationLink {
+                        AccentView()
+                    } label: {
+                        HStack {
+                            Image(systemName: "swatchpalette.fill")
+                                .foregroundStyle(.tint)
+                                .frame(minWidth: 30)
+                            
+                            Text("Akzent")
+                        }
+                    }
+                    
                     NavigationLink {
                         LicenceView()
                     } label: {

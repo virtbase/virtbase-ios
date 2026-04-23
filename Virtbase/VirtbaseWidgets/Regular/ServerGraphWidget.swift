@@ -70,12 +70,13 @@ struct ServerGraphEntityQuery: EntityQuery {
 
     private func fetchAll() async throws -> [ServerGraphEntity] {
         let servers = try await session.request(
-            "https://virtbase.com/api/v1/kvm/owned",
+            Configuration.BASE_URL
+            + "/servers?per_page=100",
             method: .get
         )
         .validate()
-        .serializingDecodable([Server].self)
-        .value
+        .serializingDecodable(ServersResponse.self)
+        .value.servers
 
         return servers.map { ServerGraphEntity(id: $0.id, server: $0) }
     }
@@ -120,8 +121,8 @@ struct ServerGraphProvider: AppIntentTimelineProvider {
     private func samples(server: Server) async -> [ServerGraph]? {
         
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/graphs"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/graphs"
             + "?timeframe=hour"
         )
         
@@ -134,10 +135,10 @@ struct ServerGraphProvider: AppIntentTimelineProvider {
         )
         .validate()
         .serializingDecodable(
-            [ServerGraph].self,
+            ServerGraphResponse.self,
             decoder: decoder
         )
-        .value
+        .value.data
         
         return samples
     }

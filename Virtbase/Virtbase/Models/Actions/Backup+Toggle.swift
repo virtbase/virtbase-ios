@@ -26,6 +26,16 @@ import Foundation
 import Alamofire
 import Combine
 
+nonisolated struct BackupUpdateRequest: Encodable {
+    let name: String
+    let isLocked: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case isLocked = "is_locked"
+    }
+}
+
 extension Backup {
     static func toggle(
         session: Session,
@@ -33,19 +43,23 @@ extension Backup {
         backup: Backup
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)"
-            + "/backups/\(backup.id)/toggle-lock"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)"
+            + "/backups/\(backup.id)"
+        )
+        
+        let request = BackupUpdateRequest(
+            name: backup.name,
+            isLocked: !(backup.locked ?? false)
         )
 
-        let _ = try? await session.request(
+        let _ = try await session.request(
             address,
-            method: .post,
-            parameters: [:],
-            encoding: JSONEncoding.default
+            method: .put,
+            parameters: request,
+            encoder: JSONParameterEncoder.default
         )
         .validate()
-        // We need this, otherwise Alamofire crashes
         .serializingData(emptyResponseCodes: [200])
         .value
     }

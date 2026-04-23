@@ -26,7 +26,7 @@ import SwiftUI
 
 struct ServerStatusView: View {
     
-    var status: ServerStatus
+    var status: ServerState
     
     var body: some View {
         switch status {

@@ -36,11 +36,11 @@ struct DownloadableInvoice: Codable {
 }
 
 nonisolated
-struct Invoices: Codable {
+struct Invoices: Decodable {
     var invoices: [Invoice]
     
     nonisolated
-    struct Invoice: Identifiable, Codable {
+    struct Invoice: Identifiable, Decodable {
         var id: String
         
         var number: String

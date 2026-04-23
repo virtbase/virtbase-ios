@@ -33,16 +33,14 @@ extension Backup {
         backup: Backup
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)"
             + "/backups/\(backup.id)/restore"
         )
 
-        let _ = try? await session.request(
+        let _ = try await session.request(
             address,
-            method: .post,
-            parameters: [:],
-            encoding: JSONEncoding.default
+            method: .post
         )
         .validate()
         // We need this, otherwise Alamofire crashes

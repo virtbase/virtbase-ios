@@ -37,8 +37,8 @@ extension Server {
         name: String
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/rename"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/rename"
         )
         
         let _ = try await session.request(

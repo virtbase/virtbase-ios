@@ -25,20 +25,6 @@
 import Foundation
 import Alamofire
 
-/*
- requests.put(
-     "https://virtbase.com/api/v1/kvm/kvm_1KE70TXYSKKZX95SM9TD2E3W1/firewall/options",
-     headers={
-       "Content-Type": "application/json",
-       "X-Virtbase-API-Key": "YOUR_SECRET_TOKEN"
-     },
-     json={
-       "policy_in": "ACCEPT",
-       "policy_out": "ACCEPT"
-     }
- )
- */
-
 extension FirewallOptions {
     static func update(
         session: Session,
@@ -46,8 +32,8 @@ extension FirewallOptions {
         options: FirewallOptions
     ) async throws {
         let address = (
-            "https://virtbase.com/api/v1/kvm/"
-            + "\(server.id)/firewall/options"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/firewall/options"
         )
         
         let _ = try await session.request(
@@ -57,7 +43,7 @@ extension FirewallOptions {
             encoder: JSONParameterEncoder.default
         )
         .validate()
-        // We need this, otherwise Alamofire crashes
+        // We need this, otherwise Alamofire bitches around
         .serializingData(emptyResponseCodes: [200])
         .value
     }

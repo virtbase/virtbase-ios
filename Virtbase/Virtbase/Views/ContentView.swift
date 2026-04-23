@@ -69,12 +69,26 @@ struct ContentView: View {
                             Text("Rechnungen")
                         }
                     }
+                    
+                    Section {
+                        NavigationLink {
+                           InvoicesView()
+                        } label: {
+                            HStack {
+                                Image(systemName: "cart.badge.clock.fill")
+                                    .foregroundStyle(.tint)
+                                    .frame(minWidth: 30)
+                                
+                                Text("Angebote")
+                            }
+                        }
+                    }
                 }
             }
             .navigationTitle("Server")
             .toolbar {
                 
-                ToolbarItem(placement: .primaryAction) {
+                ToolbarItem(placement: .topBarLeading) {
                     NavigationLink {
                         SettingsView()
                     } label: {
@@ -88,7 +102,7 @@ struct ContentView: View {
                     Menu {
                         
                         Button {
-                            openURL(URL(string: "https://app.virtbase.com/")!)
+                            openURL(URL(string: Configuration.BASE_URL)!)
                         } label: {
                             HStack {
                                 Image(systemName: "arrow.up.right")
@@ -97,7 +111,7 @@ struct ContentView: View {
                         }
                         
                         Button {
-                            openURL(URL(string: "https://app.virtbase.com/account/settings")!)
+                            openURL(URL(string: Configuration.BASE_URL + "/account/settings")!)
                         } label: {
                             HStack {
                                 Image(systemName: "person.fill")

@@ -33,15 +33,19 @@ extension FirewallRule {
         digest: String?
     ) async throws {
         var components = URLComponents(string: (
-            "https://virtbase.com/api/v1"
-            + "/kvm/\(server.id)/firewall/rules/\(pos)"
+            Configuration.BASE_URL
+            + "/servers/\(server.id)/firewall/rules"
         ))
         
+        var queryItems = [
+            URLQueryItem(name: "pos", value: String(pos))
+        ]
+        
         if let digest, !digest.isEmpty {
-            components?.queryItems = [
-                URLQueryItem(name: "digest", value: digest)
-            ]
+            queryItems.append(URLQueryItem(name: "digest", value: digest))
         }
+        
+        components?.queryItems = queryItems
         
         guard let address = components?.url?.absoluteString else {
             throw URLError(.badURL)
@@ -56,4 +60,3 @@ extension FirewallRule {
         .value
     }
 }
-

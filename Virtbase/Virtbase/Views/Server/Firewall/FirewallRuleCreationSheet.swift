@@ -35,7 +35,7 @@ struct FirewallRuleCreationSheet: View {
     
     @State private var type: FirewallRuleType = .ingoing
     @State private var action: FirewallOptions.Action = .accept
-    @State private var proto: FirewallProtocol?
+    @State private var proto: FirewallProtocol = .tcp
     @State private var sport: String = ""
     @State private var dport: String = ""
     @State private var comment: String = ""
@@ -64,10 +64,12 @@ struct FirewallRuleCreationSheet: View {
                 
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Erstellen") {
+                        let nextPosition = (viewModel.rules?.map(\.position).max() ?? -1) + 1
                         let request = FirewallRuleCreateRequest(
-                            type: type,
+                            direction: type,
+                            pos: nextPosition,
                             action: action,
-                            enable: enabled ? 1 : 0,
+                            enabled: enabled,
                             comment: comment,
                             proto: proto,
                             digest: nil,
@@ -76,15 +78,17 @@ struct FirewallRuleCreationSheet: View {
                             icmpType: (proto == .icmp ? icmpType : nil)
                         )
                         
+                        dismiss()
+                        
                         Task {
                             await viewModel.createRule(
                                 session: session,
                                 server: server,
                                 request: request
                             )
-                            dismiss()
                         }
                     }
+                    .disabled(comment.count > 64)
                 }
             }
         }

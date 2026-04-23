@@ -35,7 +35,11 @@ nonisolated struct ServerRecord: Identifiable, Decodable {
         case id = "id"
         case ip = "ip"
         case host = "hostname"
-        case created = "createdAt"
-        case updated = "updatedAt"
+        case created = "created_at"
+        case updated = "updated_at"
     }
+}
+
+nonisolated struct ServerRecordsResponse: Decodable {
+    var records: [ServerRecord]
 }

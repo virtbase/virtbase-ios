@@ -25,14 +25,14 @@
 import Foundation
 
 nonisolated struct ServerStatistics: Decodable {
-    var networkIncoming: Int?
-    var networkOutgoing: Int?
-    var uptime: Int?
-    var memory: Int?
-    var freeMemory: Int?
-    var maxMemory: Int?
-    var disk: Int?
-    var maxDisk: Int?
+    var networkIncoming: Double?
+    var networkOutgoing: Double?
+    var uptime: Double?
+    var memory: Double?
+    var freeMemory: Double?
+    var maxMemory: Double?
+    var disk: Double?
+    var maxDisk: Double?
     var processor: Double?
     var maxProcessor: Double?
     

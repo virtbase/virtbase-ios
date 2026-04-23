@@ -33,8 +33,10 @@ extension Invoices {
         invoice: Invoices.Invoice
     ) async throws -> URL {
 
-        let address =
-            "https://virtbase.com/api/v1/invoices/\(invoice.id)/download"
+        let address = (
+            Configuration.BASE_URL
+            + "/invoices/\(invoice.id)/download"
+        )
 
         let downloadable = try await session.request(address)
             .validate()
