@@ -29,5 +29,5 @@ class Configuration {
      MARK: This key is highly sensitive and must be kept confidential.
     */
     
-    static let VERCEL_BYPASS = "kR3jZmlunO1On8W0ls9OMpOmG1G3RYnQ"
+    static let VERCEL_BYPASS = ""
 }
