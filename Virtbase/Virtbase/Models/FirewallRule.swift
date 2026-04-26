@@ -92,9 +92,9 @@ struct FirewallRule: Codable {
     var position: Int
     var description: String?
     
-    var `protocol`: FirewallProtocol?
+    var `protocol`: FirewallProtocol
     var action: FirewallOptions.Action
-    var type: FirewallRuleType
+    var type: FirewallRuleType?
     
     var enabled: Bool?
     var digest: String?
@@ -114,39 +114,6 @@ struct FirewallRule: Codable {
         case icmpType = "icmp_type"
         case source = "sport"
         case destination = "dport"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        position = try container.decode(Int.self, forKey: .position)
-        description = try container.decodeIfPresent(String.self, forKey: .description)
-        action = try container.decode(FirewallOptions.Action.self, forKey: .action)
-        type = try container.decodeIfPresent(FirewallRuleType.self, forKey: .type) ?? .ingoing
-        enabled = try container.decodeIfPresent(Bool.self, forKey: .enabled)
-        digest = try container.decodeIfPresent(String.self, forKey: .digest)
-        icmpType = try container.decodeIfPresent(String.self, forKey: .icmpType)
-        source = try container.decodeIfPresent(String.self, forKey: .source)
-        destination = try container.decodeIfPresent(String.self, forKey: .destination)
-        
-        if let rawProtocol = try container.decodeIfPresent(String.self, forKey: .protocol) {
-            `protocol` = FirewallProtocol(rawValue: rawProtocol)
-        } else {
-            `protocol` = nil
-        }
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(position, forKey: .position)
-        try container.encodeIfPresent(description, forKey: .description)
-        try container.encodeIfPresent(`protocol`, forKey: .protocol)
-        try container.encode(action, forKey: .action)
-        try container.encode(type, forKey: .type)
-        try container.encodeIfPresent(enabled, forKey: .enabled)
-        try container.encodeIfPresent(digest, forKey: .digest)
-        try container.encodeIfPresent(icmpType, forKey: .icmpType)
-        try container.encodeIfPresent(source, forKey: .source)
-        try container.encodeIfPresent(destination, forKey: .destination)
     }
 }
 

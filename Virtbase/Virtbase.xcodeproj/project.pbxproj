@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F5075132F6C95E600C643D6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F5075122F6C95E600C643D6 /* Localizable.xcstrings */; };
-		0F5075142F6C95E600C643D6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F5075122F6C95E600C643D6 /* Localizable.xcstrings */; };
+		0F4E9C5D2F9E3C8B00960699 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E9C5C2F9E3C8B00960699 /* Localizable.xcstrings */; };
+		0F4E9C5E2F9E3C8B00960699 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E9C5C2F9E3C8B00960699 /* Localizable.xcstrings */; };
 		0F5980F22F3E7C0E00B4602F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0F5980F12F3E7C0E00B4602F /* Alamofire */; };
 		0F5FA0B92F44B63600CEBC8A /* Virtbase.icon in Resources */ = {isa = PBXBuildFile; fileRef = 0F5FA0B82F44B63600CEBC8A /* Virtbase.icon */; };
 		0F69E2C02F5235F60027A67B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0F69E2BF2F5235F60027A67B /* Alamofire */; };
@@ -42,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F5075122F6C95E600C643D6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		0F4E9C5C2F9E3C8B00960699 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		0F5980CC2F3E654200B4602F /* Virtbase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Virtbase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5FA0B82F44B63600CEBC8A /* Virtbase.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Virtbase.icon; sourceTree = "<group>"; };
 		0FD5CC7A2F5226DD0098292E /* VirtbaseWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VirtbaseWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,7 @@
 		0F5980C32F3E654200B4602F = {
 			isa = PBXGroup;
 			children = (
-				0F5075122F6C95E600C643D6 /* Localizable.xcstrings */,
+				0F4E9C5C2F9E3C8B00960699 /* Localizable.xcstrings */,
 				0F5FA0B82F44B63600CEBC8A /* Virtbase.icon */,
 				0F5980CE2F3E654200B4602F /* Virtbase */,
 				0FD5CC802F5226DD0098292E /* VirtbaseWidgets */,
@@ -251,7 +251,10 @@
 			knownRegions = (
 				de,
 				Base,
+				"zh-Hans",
 				en,
+				fr,
+				it,
 				pl,
 			);
 			mainGroup = 0F5980C32F3E654200B4602F;
@@ -276,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5FA0B92F44B63600CEBC8A /* Virtbase.icon in Resources */,
-				0F5075132F6C95E600C643D6 /* Localizable.xcstrings in Resources */,
+				0F4E9C5D2F9E3C8B00960699 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F5075142F6C95E600C643D6 /* Localizable.xcstrings in Resources */,
+				0F4E9C5E2F9E3C8B00960699 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

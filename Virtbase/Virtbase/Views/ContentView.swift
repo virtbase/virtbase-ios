@@ -70,9 +70,10 @@ struct ContentView: View {
                         }
                     }
                     
+                    /*
                     Section {
                         NavigationLink {
-                           InvoicesView()
+                           
                         } label: {
                             HStack {
                                 Image(systemName: "cart.badge.clock.fill")
@@ -83,6 +84,7 @@ struct ContentView: View {
                             }
                         }
                     }
+                     */
                 }
             }
             .navigationTitle("Server")

@@ -72,11 +72,11 @@ struct ServerFirewallView: View {
                     
                     FirewallOptionsSection(
                         ingoing: binding(
-                            get: { options.ingoing },
+                            get: { options.ingoing ?? .accept },
                             set: { FirewallOptions(enabled: options.enabled, ingoing: $0, outgoing: options.outgoing) }
                         ),
                         outgoing: binding(
-                            get: { options.outgoing },
+                            get: { options.outgoing ?? .accept },
                             set: { FirewallOptions(enabled: options.enabled, ingoing: options.ingoing, outgoing: $0) }
                         )
                     )

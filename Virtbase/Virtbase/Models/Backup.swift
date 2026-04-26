@@ -24,7 +24,7 @@
 
 import Foundation
 
-nonisolated struct Backup: Identifiable, Decodable {
+nonisolated struct Backup: Identifiable, Codable {
     var id: String
     var name: String
     var locked: Bool?
@@ -44,32 +44,5 @@ nonisolated struct Backup: Identifiable, Decodable {
         case failed = "failed_at"
         case finished = "finished_at"
         case template = "template"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(String.self, forKey: .id)
-        name = try container.decode(String.self, forKey: .name)
-        locked = try container.decodeIfPresent(Bool.self, forKey: .locked)
-        
-        if let intSize = try? container.decodeIfPresent(Int.self, forKey: .size) {
-            size = intSize
-        } else if let doubleSize = try? container.decodeIfPresent(Double.self, forKey: .size) {
-            size = Int(doubleSize)
-        } else {
-            size = nil
-        }
-        
-        started = try container.decodeIfPresent(Date.self, forKey: .started)
-        failed = try container.decodeIfPresent(Date.self, forKey: .failed)
-        finished = try container.decodeIfPresent(Date.self, forKey: .finished)
-        
-        if let templateID = try? container.decodeIfPresent(String.self, forKey: .template) {
-            template = templateID
-        } else if let expanded = try? container.decodeIfPresent(ServerTemplate.self, forKey: .template) {
-            template = expanded.id
-        } else {
-            template = nil
-        }
     }
 }

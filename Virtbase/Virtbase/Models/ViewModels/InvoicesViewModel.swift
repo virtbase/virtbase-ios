@@ -47,16 +47,20 @@ class InvoicesViewModel: ObservableObject {
         )
         
         do {
-            let data = try await session.request(
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            
+            self.invoices = try await session.request(
                 address,
                 method: .get
             )
             .validate()
-            .serializingData()
-            .value
+            .serializingDecodable(
+                Invoices.self,
+                decoder: decoder
+            )
+            .value.invoices
             
-            let decoder = JSONDecoder()
-            self.invoices = try decoder.decode(Invoices.self, from: data).invoices
             self.status = .succeeded
         } catch {
             self.status = .failed

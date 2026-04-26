@@ -54,14 +54,14 @@ struct FirewallRuleEditorView: View {
         self.session = session
         self.viewModel = viewModel
         
-        _type = State(initialValue: rule.type)
-        _action = State(initialValue: rule.action)
-        _proto = State(initialValue: rule.protocol ?? .tcp)
-        _sport = State(initialValue: rule.source ?? "")
-        _dport = State(initialValue: rule.destination ?? "")
-        _comment = State(initialValue: rule.description ?? "")
-        _enabled = State(initialValue: rule.enabled ?? true)
-        _icmpType = State(initialValue: rule.icmpType ?? "any")
+        type = rule.type ?? .ingoing
+        action = rule.action
+        proto = rule.protocol
+        sport = rule.source ?? ""
+        dport = rule.destination ?? ""
+        comment = rule.description ?? ""
+        enabled = rule.enabled ?? true
+        icmpType = rule.icmpType ?? "any"
     }
     
     var body: some View {

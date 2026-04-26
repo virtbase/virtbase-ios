@@ -1,7 +1,1725 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
-
+    "%.2f" : {
+      "shouldTranslate" : false
+    },
+    "%.2f €" : {
+      "shouldTranslate" : false
+    },
+    "%@" : {
+      "shouldTranslate" : false
+    },
+    "%@ Fortfahren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ Resume" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 继续" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ Riprendi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "%@ Wznów" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ Reprendre" } }
+      }
+    },
+    "%@ Neustarten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ Restart" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 重启" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ Riavvia" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "%@ Uruchom ponownie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ Redémarrer" } }
+      }
+    },
+    "%@ Pausieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ Pause" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 暂停" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ Pausa" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "%@ Wstrzymaj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ Mettre en pause" } }
+      }
+    },
+    "%@ Starten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ Start" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 启动" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ Avvia" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "%@ Uruchom" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ Démarrer" } }
+      }
+    },
+    "%@ Stoppen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ Stop" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 停止" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ Ferma" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "%@ Zatrzymaj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ Arrêter" } }
+      }
+    },
+    "%@ Suspendieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ Suspend" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 挂起" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "%@ Sospendi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "%@ Zawieś" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ Suspendre" } }
+      }
+    },
+    "€" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "€" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "€" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "€" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "€" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "€" } }
+      }
+    },
+    "Abbrechen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "取消" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Annulla" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Anuluj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Annuler" } }
+      }
+    },
+    "Abgebrochen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancelled" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已取消" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Annullato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Anulowano" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Annulé" } }
+      }
+    },
+    "Ablehnen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Decline" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "拒绝" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Rifiuta" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Odrzuć" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Refuser" } }
+      }
+    },
+    "Abmelden" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sign Out" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "退出登录" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Disconnetti" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wyloguj się" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Se déconnecter" } }
+      }
+    },
+    "Account" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Account" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "账户" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Account" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Konto" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Compte" } }
+      }
+    },
+    "Action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Action" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "操作" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Azione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Akcja" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Action" } }
+      }
+    },
+    "Addresse" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Address" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "地址" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Indirizzo" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Adres" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Adresse" } }
+      }
+    },
+    "Adresse" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Address" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "地址" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Indirizzo" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Adres" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Adresse" } }
+      }
+    },
+    "Aktion" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Action" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "操作" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Azione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Akcja" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Action" } }
+      }
+    },
+    "Aktion auf Server ausführen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Execute Action on Server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "在服务器上执行操作" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Esegui azione sul server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wykonaj akcję na serwerze" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Exécuter une action sur le serveur" } }
+      }
+    },
+    "Aktiv" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Active" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "活跃" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Attivo" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Aktywny" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Actif" } }
+      }
+    },
+    "Aktualisiert" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Updated" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已更新" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiornato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zaktualizowano" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mis à jour" } }
+      }
+    },
+    "Akzent" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Accent" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "强调色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Accento" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Akcent" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Accent" } }
+      }
+    },
+    "Akzentfarbe" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Accent Color" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "强调颜色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Colore accento" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kolor akcentu" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Couleur d'accent" } }
+      }
+    },
+    "Akzeptieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Accept" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "接受" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Accetta" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Akceptuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Accepter" } }
+      }
+    },
+    "Alamofire Software Foundation" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Alamofire Software Foundation" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Alamofire Software Foundation" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Alamofire Software Foundation" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Alamofire Software Foundation" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Alamofire Software Foundation" } }
+      }
+    },
+    "Alle Anwendungsdaten löschen?" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete All App Data?" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "删除所有应用数据？" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Eliminare tutti i dati dell'app?" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Usunąć wszystkie dane aplikacji?" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Supprimer toutes les données de l'app ?" } }
+      }
+    },
+    "Alle Daten Löschen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete All Data" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "删除所有数据" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina tutti i dati" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Usuń wszystkie dane" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Supprimer toutes les données" } }
+      }
+    },
+    "Alle lokalen Daten werden entfernt, und sie werden sofort abgemeldet. Dies lässt sich nicht rückgangig machen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "All local data will be removed and you will be signed out immediately. This cannot be undone." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "所有本地数据将被删除，您将立即退出登录。此操作无法撤销。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tutti i dati locali verranno rimossi e verrai disconnesso immediatamente. Questa operazione non può essere annullata." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wszystkie lokalne dane zostaną usunięte i zostaniesz natychmiast wylogowany. Tej operacji nie można cofnąć." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Toutes les données locales seront supprimées et vous serez déconnecté immédiatement. Cette action est irréversible." } }
+      }
+    },
+    "Allgemein" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "General" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "通用" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Generale" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Ogólne" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Général" } }
+      }
+    },
+    "Anfragefehler" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Request Error" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "请求错误" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Errore di richiesta" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Błąd żądania" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Erreur de requête" } }
+      }
+    },
+    "Anmelden" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sign In" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "登录" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Accedi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zaloguj się" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Se connecter" } }
+      }
+    },
+    "Anwendung" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Application" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "应用程序" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Applicazione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Aplikacja" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Application" } }
+      }
+    },
+    "Ausgehend" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Outbound" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "出站" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "In uscita" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wychodzący" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sortant" } }
+      }
+    },
+    "Backup" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Backup" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "备份" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Backup" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kopia zapasowa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sauvegarde" } }
+      }
+    },
+    "Backup wird erstellt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Creating Backup" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在创建备份" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Creazione backup" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Tworzenie kopii zapasowej" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Création de la sauvegarde" } }
+      }
+    },
+    "Backups" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Backups" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "备份列表" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Backup" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kopie zapasowe" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sauvegardes" } }
+      }
+    },
+    "Bald Verfügbar" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Coming Soon" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "即将推出" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Presto disponibile" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wkrótce dostępne" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bientôt disponible" } }
+      }
+    },
+    "Bearbeiten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "编辑" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Modifica" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Edytuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Modifier" } }
+      }
+    },
+    "Bearbeitung" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Editing" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "编辑中" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Modifica in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Edytowanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Modification" } }
+      }
+    },
+    "Beenden" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Quit" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "退出" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Esci" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zakończ" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Quitter" } }
+      }
+    },
+    "Beinhaltete Lizenzen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Included Licenses" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "包含的许可证" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Licenze incluse" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dołączone licencje" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Licences incluses" } }
+      }
+    },
+    "Berechtigungen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Permissions" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "权限" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Autorizzazioni" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uprawnienia" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Autorisations" } }
+      }
+    },
+    "Bewerten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rate" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "评分" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Valuta" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Oceń" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Noter" } }
+      }
+    },
+    "Bezahlt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Paid" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已付款" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Pagato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Opłacono" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Payé" } }
+      }
+    },
+    "Blau" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Blue" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "蓝色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blu" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Niebieski" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bleu" } }
+      }
+    },
+    "Browser Öffnen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Browser" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "打开浏览器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Apri browser" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Otwórz przeglądarkę" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvrir le navigateur" } }
+      }
+    },
+    "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." } }
+      }
+    },
+    "CPU" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "CPU" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "CPU" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "CPU" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "CPU" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "CPU" } }
+      }
+    },
+    "Dashboard" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dashboard" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "仪表盘" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Dashboard" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Panel" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tableau de bord" } }
+      }
+    },
+    "Daten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Data" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "数据" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Dati" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dane" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Données" } }
+      }
+    },
+    "Deine Server konnten nicht geladen werden. Überprüfe deine Internetverbindung, oder ob du angemeldet bist." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your servers could not be loaded. Check your internet connection or whether you are signed in." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "无法加载您的服务器。请检查您的网络连接或是否已登录。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Impossibile caricare i tuoi server. Controlla la connessione a Internet o se sei connesso." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nie udało się załadować serwerów. Sprawdź połączenie z internetem lub czy jesteś zalogowany." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vos serveurs n'ont pas pu être chargés. Vérifiez votre connexion internet ou si vous êtes connecté." } }
+      }
+    },
+    "Details" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Details" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "详情" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Dettagli" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Szczegóły" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Détails" } }
+      }
+    },
+    "Die Anfrage an den Server ist fehlgeschlagen. Überprüfe ob du mit dem Internet verbunden bist oder dein Schlüssel alle benötigten Berechtigungen hat." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The request to the server failed. Check whether you are connected to the internet or your key has all required permissions." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "服务器请求失败。请检查您是否已连接到互联网，或您的密钥是否具有所有必要权限。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "La richiesta al server è fallita. Controlla se sei connesso a Internet o se la tua chiave ha tutte le autorizzazioni necessarie." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Żądanie do serwera nie powiodło się. Sprawdź, czy jesteś połączony z internetem lub czy Twój klucz ma wszystkie wymagane uprawnienia." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "La requête vers le serveur a échoué. Vérifiez si vous êtes connecté à internet ou si votre clé dispose de toutes les autorisations requises." } }
+      }
+    },
+    "Die Keychain konnte nicht geleert werden. Bitte erneut versuchen oder die App neu installieren." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The Keychain could not be cleared. Please try again or reinstall the app." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "无法清除钥匙串。请重试或重新安装应用。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Impossibile svuotare il Keychain. Riprova o reinstalla l'app." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nie udało się wyczyścić pęku kluczy. Spróbuj ponownie lub zainstaluj aplikację ponownie." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Le trousseau n'a pas pu être vidé. Veuillez réessayer ou réinstaller l'application." } }
+      }
+    },
+    "Diese Berechtigungen sind notwendig, damit die Virtbase App ordnungsgemäß funktionieren kann. Das Entfernen oder Einschränken dieser Berechtigungen kann zu Fehlfunktionen der App führen und unauthentifizierte Anfragen verursachen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "These permissions are necessary for the Virtbase app to function properly. Removing or restricting these permissions may cause the app to malfunction and result in unauthenticated requests." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "这些权限对于 Virtbase 应用正常运行是必要的。删除或限制这些权限可能导致应用出现故障并产生未经授权的请求。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Queste autorizzazioni sono necessarie per il corretto funzionamento dell'app Virtbase. La rimozione o la limitazione di queste autorizzazioni può causare malfunzionamenti dell'app e richieste non autenticate." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Te uprawnienia są niezbędne do prawidłowego działania aplikacji Virtbase. Usunięcie lub ograniczenie tych uprawnień może spowodować nieprawidłowe działanie aplikacji i nieautoryzowane żądania." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ces autorisations sont nécessaires au bon fonctionnement de l'application Virtbase. La suppression ou la restriction de ces autorisations peut entraîner des dysfonctionnements de l'application et des requêtes non authentifiées." } }
+      }
+    },
+    "Discord" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Discord" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Discord" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Discord" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Discord" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Discord" } }
+      }
+    },
+    "Du hast noch keine Server in deinem Account hinzugefügt. Öffne Virtbase, um deinen ersten Server einzurichten." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "You haven't added any servers to your account yet. Open Virtbase to set up your first server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "您还没有向账户添加任何服务器。打开 Virtbase 来设置您的第一台服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non hai ancora aggiunto alcun server al tuo account. Apri Virtbase per configurare il tuo primo server." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nie dodałeś jeszcze żadnych serwerów do swojego konta. Otwórz Virtbase, aby skonfigurować pierwszy serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vous n'avez encore ajouté aucun serveur à votre compte. Ouvrez Virtbase pour configurer votre premier serveur." } }
+      }
+    },
+    "E-Mail" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Email" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "电子邮件" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "E-mail" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "E-mail" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "E-mail" } }
+      }
+    },
+    "Einfügen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Paste" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "粘贴" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Incolla" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wklej" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Coller" } }
+      }
+    },
+    "Eingehend" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Inbound" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "入站" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "In entrata" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Przychodzący" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Entrant" } }
+      }
+    },
+    "Einstellungen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "设置" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Impostazioni" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Ustawienia" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Paramètres" } }
+      }
+    },
+    "Eintrag" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Entry" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "条目" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Voce" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wpis" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Entrée" } }
+      }
+    },
+    "Einträge" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Entries" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "条目列表" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Voci" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wpisy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Entrées" } }
+      }
+    },
+    "Entsperren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "解锁" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sblocca" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Odblokuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Déverrouiller" } }
+      }
+    },
+    "Erstellen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Create" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "创建" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Crea" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Utwórz" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Créer" } }
+      }
+    },
+    "Erstellt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Created" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已创建" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Creato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Utworzono" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Créé" } }
+      }
+    },
+    "Farben" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Colors" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "颜色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Colori" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kolory" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Couleurs" } }
+      }
+    },
+    "Fehlgeschlagen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Failed" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "失败" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non riuscito" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Niepowodzenie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Échec" } }
+      }
+    },
+    "Fertig" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "完成" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Fine" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Gotowe" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Terminé" } }
+      }
+    },
+    "Festplatte" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Disk" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "磁盘" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Disco" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dysk" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Disque" } }
+      }
+    },
+    "Firewall" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Firewall" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "防火墙" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Firewall" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zapora sieciowa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Pare-feu" } }
+      }
+    },
+    "Fortfahren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resume" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "继续" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riprendi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wznów" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Reprendre" } }
+      }
+    },
+    "Gateway" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Gateway" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "网关" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Gateway" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Brama" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passerelle" } }
+      }
+    },
+    "Gesendet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sent" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已发送" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Inviato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wysłano" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Envoyé" } }
+      }
+    },
+    "Gestoppt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stopped" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已停止" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Fermato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zatrzymano" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêté" } }
+      }
+    },
+    "Grün" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Green" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "绿色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Verde" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zielony" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vert" } }
+      }
+    },
+    "Halte das Widget gedrückt, um einen Server auszuwählen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Long-press the widget to select a server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "长按小组件以选择服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tieni premuto il widget per selezionare un server." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Przytrzymaj widget, aby wybrać serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Maintenez le widget appuyé pour sélectionner un serveur." } }
+      }
+    },
+    "Herunterladen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Download" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "下载" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scarica" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Pobierz" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Télécharger" } }
+      }
+    },
+    "Host" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Host" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "主机" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Host" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Host" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Hôte" } }
+      }
+    },
+    "ICMP-Typ" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "ICMP Type" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "ICMP 类型" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tipo ICMP" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Typ ICMP" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Type ICMP" } }
+      }
+    },
+    "Ignorieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ignore" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "忽略" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ignora" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Ignoruj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ignorer" } }
+      }
+    },
+    "Keine Daten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No Data" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "无数据" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun dato" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Brak danych" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucune donnée" } }
+      }
+    },
+    "Keine Einträge" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No Entries" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "无条目" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessuna voce" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Brak wpisów" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucune entrée" } }
+      }
+    },
+    "Keine Server" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No Servers" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "无服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Brak serwerów" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucun serveur" } }
+      }
+    },
+    "Kommentar" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Comment" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "备注" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Commento" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Komentarz" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Commentaire" } }
+      }
+    },
+    "Konsole" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Console" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "控制台" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Console" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Konsola" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Console" } }
+      }
+    },
+    "KVM" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "KVM" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "KVM" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "KVM" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "KVM" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "KVM" } }
+      }
+    },
+    "Land" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Country" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "国家" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Paese" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kraj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Pays" } }
+      }
+    },
+    "Läuft" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Running" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "运行中" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "In esecuzione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Działa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "En cours d'exécution" } }
+      }
+    },
+    "Lege einen neuen Namen für deinen Server fest. Der Name darf nicht leer sein." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Set a new name for your server. The name must not be empty." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "为您的服务器设置新名称。名称不能为空。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Imposta un nuovo nome per il tuo server. Il nome non può essere vuoto." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Ustaw nową nazwę dla serwera. Nazwa nie może być pusta." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Définissez un nouveau nom pour votre serveur. Le nom ne peut pas être vide." } }
+      }
+    },
+    "Lesen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Read" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "读取" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Leggi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Odczyt" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Lire" } }
+      }
+    },
+    "Lizenzen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Licenses" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "许可证" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Licenze" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Licencje" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Licences" } }
+      }
+    },
+    "Löschen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "删除" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Elimina" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Usuń" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Supprimer" } }
+      }
+    },
+    "Löschen fehlgeschlagen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Deletion Failed" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "删除失败" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Eliminazione non riuscita" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Usuwanie nie powiodło się" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Échec de la suppression" } }
+      }
+    },
+    "Mail & Passwort" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Email & Password" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "邮箱与密码" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "E-mail e password" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "E-mail i hasło" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "E-mail et mot de passe" } }
+      }
+    },
+    "Mehr Optionen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "More Options" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "更多选项" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Altre opzioni" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Więcej opcji" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Plus d'options" } }
+      }
+    },
+    "Meine Server" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "My Servers" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "我的服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "I miei server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Moje serwery" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mes serveurs" } }
+      }
+    },
+    "Metrik" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Metric" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "指标" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Metrica" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Metryka" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Métrique" } }
+      }
+    },
+    "Minze" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mint" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "薄荷绿" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Menta" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Miętowy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Menthe" } }
+      }
+    },
+    "Mit diesem Widget kannst du dir deine Server als Übersicht hinzufügen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Use this widget to add your servers as an overview." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "使用此小组件可将您的服务器添加为概览。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Usa questo widget per aggiungere i tuoi server come panoramica." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Użyj tego widżetu, aby dodać serwery jako przegląd." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Utilisez ce widget pour ajouter vos serveurs en aperçu." } }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Name" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "名称" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nome" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nazwa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nom" } }
+      }
+    },
+    "Name Bearbeiten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit Name" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "编辑名称" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Modifica nome" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Edytuj nazwę" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Modifier le nom" } }
+      }
+    },
+    "NameServer" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Name Server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "域名服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Name server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Serwer nazw" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Serveur de noms" } }
+      }
+    },
+    "Neue Regel" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New Rule" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "新规则" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nuova regola" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nowa reguła" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nouvelle règle" } }
+      }
+    },
+    "Neuer Eintrag" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New Entry" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "新条目" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nuova voce" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nowy wpis" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nouvelle entrée" } }
+      }
+    },
+    "Neues Backup" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "New Backup" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "新建备份" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nuovo backup" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nowa kopia zapasowa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nouvelle sauvegarde" } }
+      }
+    },
+    "Neustart läuft" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restarting" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在重启" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riavvio in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Trwa ponowne uruchamianie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Redémarrage en cours" } }
+      }
+    },
+    "Neustarten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restart" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重启" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riavvia" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchom ponownie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Redémarrer" } }
+      }
+    },
+    "Nicht angemeldet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Not Signed In" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "未登录" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non connesso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nie zalogowano" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Non connecté" } }
+      }
+    },
+    "Node" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Node" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "节点" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nodo" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Węzeł" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nœud" } }
+      }
+    },
+    "Offline" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Offline" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "离线" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Non in linea" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Offline" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Hors ligne" } }
+      }
+    },
+    "Öffnet die Virtbase App." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Opens the Virtbase app." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "打开 Virtbase 应用。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Apre l'app Virtbase." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Otwiera aplikację Virtbase." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvre l'application Virtbase." } }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "OK" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "好的" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "OK" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "OK" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "OK" } }
+      }
+    },
+    "Online" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Online" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "在线" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Online" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Online" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "En ligne" } }
+      }
+    },
+    "Optionen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Options" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "选项" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Opzioni" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Opcje" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Options" } }
+      }
+    },
+    "Orange" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Orange" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "橙色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Arancione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Pomarańczowy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Orange" } }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pause" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂停" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Pausa" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Pauza" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Pause" } }
+      }
+    },
+    "Pausieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pause" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂停" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Metti in pausa" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstrzymaj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mettre en pause" } }
+      }
+    },
+    "Pausiert" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Paused" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已暂停" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "In pausa" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstrzymano" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "En pause" } }
+      }
+    },
+    "Pausiert den ausgewählten Server." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pauses the selected server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂停所选服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Mette in pausa il server selezionato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstrzymuje wybrany serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Met en pause le serveur sélectionné." } }
+      }
+    },
+    "Preise" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Prices" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "价格" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Prezzi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Ceny" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tarifs" } }
+      }
+    },
+    "Protokoll" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Protocol" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "协议" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Protocollo" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Protokół" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Protocole" } }
+      }
+    },
+    "Quellport" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Source Port" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "源端口" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Porta sorgente" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Port źródłowy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Port source" } }
+      }
+    },
+    "RAM" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "RAM" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "内存" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "RAM" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "RAM" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "RAM" } }
+      }
+    },
+    "rDNS" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "rDNS" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "反向 DNS" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "rDNS" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "rDNS" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "rDNS" } }
+      }
+    },
+    "Reboot" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reboot" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重新启动" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riavvio" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchom ponownie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Redémarrage" } }
+      }
+    },
+    "Rechenzentrum" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Data Center" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "数据中心" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Data center" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Centrum danych" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Centre de données" } }
+      }
+    },
+    "Rechnungen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Invoices" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "发票" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Fatture" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Faktury" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Factures" } }
+      }
+    },
+    "Regel" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rule" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "规则" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Regola" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Reguła" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Règle" } }
+      }
+    },
+    "Regel bearbeiten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Edit Rule" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "编辑规则" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Modifica regola" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Edytuj regułę" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Modifier la règle" } }
+      }
+    },
+    "Regeln" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rules" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "规则列表" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Regole" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Reguły" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Règles" } }
+      }
+    },
+    "Reset" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reset" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重置" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristina" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Resetuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réinitialiser" } }
+      }
+    },
+    "Resume" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resume" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "继续" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riprendi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wznów" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Reprendre" } }
+      }
+    },
+    "Richtung" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Direction" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "方向" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Direzione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kierunek" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Direction" } }
+      }
+    },
+    "Rot" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Red" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "红色" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Rosso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Czerwony" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Rouge" } }
+      }
+    },
+    "Schlüssel" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Key" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "密钥" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiave" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Klucz" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Clé" } }
+      }
+    },
+    "Schreiben" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Write" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "写入" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scrivi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zapis" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Écrire" } }
+      }
+    },
+    "Server" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Serveur" } }
+      }
+    },
+    "Server Action" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Server Action" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "服务器操作" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Azione server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Akcja serwera" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Action du serveur" } }
+      }
+    },
+    "Server auswählen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Select server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "选择服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Seleziona server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wybierz serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sélectionner un serveur" } }
+      }
+    },
+    "Server Auswählen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Select Server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "选择服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Seleziona server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wybierz serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sélectionner un serveur" } }
+      }
+    },
+    "Server fortfahren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resume server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "继续服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riprendi server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wznów serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Reprendre le serveur" } }
+      }
+    },
+    "Server neustarten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restart server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重启服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riavvia server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchom ponownie serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Redémarrer le serveur" } }
+      }
+    },
+    "Server pausieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pause server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂停服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Metti in pausa server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstrzymaj serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mettre le serveur en pause" } }
+      }
+    },
+    "Server starten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "启动服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Avvia server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchom serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Démarrer le serveur" } }
+      }
+    },
+    "Server stoppen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stop server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "停止服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ferma server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zatrzymaj serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêter le serveur" } }
+      }
+    },
+    "Server suspendieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Suspend server" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "挂起服务器" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sospendi server" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zawieś serwer" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suspendre le serveur" } }
+      }
+    },
+    "Setzt den ausgewählten Server fort." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resumes the selected server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "继续所选服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riprende il server selezionato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wznawia wybrany serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Reprend le serveur sélectionné." } }
+      }
+    },
+    "Shutdown" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Shutdown" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "关机" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Spegnimento" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wyłączenie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêt" } }
+      }
+    },
+    "sk_live_…" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "sk_live_…" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "sk_live_…" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "sk_live_…" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "sk_live_…" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "sk_live_…" } }
+      }
+    },
+    "Snapshot" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snapshot" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "快照" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Snapshot" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Migawka" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Instantané" } }
+      }
+    },
+    "Speichern" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Save" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "保存" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Salva" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zapisz" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Enregistrer" } }
+      }
+    },
+    "Sperren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Lock" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "锁定" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocca" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zablokuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Verrouiller" } }
+      }
+    },
+    "Standard" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Default" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "默认" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Predefinito" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Domyślny" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Par défaut" } }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "启动" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Avvio" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Start" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Démarrage" } }
+      }
+    },
+    "Starten" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "启动" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Avvia" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchom" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Démarrer" } }
+      }
+    },
+    "Startet den ausgewählten Server neu." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restarts the selected server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重启所选服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Riavvia il server selezionato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchamia ponownie wybrany serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Redémarre le serveur sélectionné." } }
+      }
+    },
+    "Startet den ausgewählten Server." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Starts the selected server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "启动所选服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Avvia il server selezionato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchamia wybrany serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Démarre le serveur sélectionné." } }
+      }
+    },
+    "Steuer" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tax" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "税费" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Imposta" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Podatek" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Taxe" } }
+      }
+    },
+    "Stop" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stop" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "停止" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Stop" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zatrzymaj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêt" } }
+      }
+    },
+    "Stoppen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stop" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "停止" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ferma" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zatrzymaj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêter" } }
+      }
+    },
+    "Stoppt den ausgewählten Server." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stops the selected server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "停止所选服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ferma il server selezionato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zatrzymuje wybrany serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrête le serveur sélectionné." } }
+      }
+    },
+    "Suspend" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Suspend" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "挂起" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sospendi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zawieś" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suspendre" } }
+      }
+    },
+    "Suspendieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Suspend" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "挂起" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sospendi" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zawieś" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suspendre" } }
+      }
+    },
+    "Suspendiert" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Suspended" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "已挂起" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sospeso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zawieszono" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suspendu" } }
+      }
+    },
+    "Suspendiert den ausgewählten Server." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Suspends the selected server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "挂起所选服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sospende il server selezionato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zawiesza wybrany serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suspend le serveur sélectionné." } }
+      }
+    },
+    "Total" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Total" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "总计" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Totale" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Łącznie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Total" } }
+      }
+    },
+    "Unbekannt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unknown" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "未知" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sconosciuto" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nieznany" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Inconnu" } }
+      }
+    },
+    "Verifizieren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Verify" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "验证" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Verifica" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zweryfikuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vérifier" } }
+      }
+    },
+    "Virtbase" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase" } }
+      }
+    },
+    "Virtbase OAuth" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase OAuth" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase OAuth" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase OAuth" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase OAuth" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase OAuth" } }
+      }
+    },
+    "Virtbase öffnen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Virtbase" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "打开 Virtbase" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Apri Virtbase" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Otwórz Virtbase" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvrir Virtbase" } }
+      }
+    },
+    "Virtbase Schlüssel" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase Key" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase 密钥" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiave Virtbase" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Klucz Virtbase" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Clé Virtbase" } }
+      }
+    },
+    "Virtbase verwendet sogenannte API-Schlüssel, um Entwicklern eine einfache und zuverlässige Schnittstelle für Erweiterungen, Integrationen und automatisierte Systeme bereitzustellen. Die Virtbase App greift auf diese Schlüssel zu, um entsprechende Funktionen zu ermöglichen." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase uses API keys to provide developers with a simple and reliable interface for extensions, integrations, and automated systems. The Virtbase app accesses these keys to enable the corresponding features." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase 使用 API 密钥为开发者提供简单可靠的扩展、集成和自动化系统接口。Virtbase 应用访问这些密钥以启用相应功能。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase utilizza le chiavi API per fornire agli sviluppatori un'interfaccia semplice e affidabile per estensioni, integrazioni e sistemi automatizzati. L'app Virtbase accede a queste chiavi per abilitare le funzionalità corrispondenti." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase używa kluczy API, aby zapewnić deweloperom prosty i niezawodny interfejs dla rozszerzeń, integracji i zautomatyzowanych systemów. Aplikacja Virtbase uzyskuje dostęp do tych kluczy, aby umożliwić odpowiednie funkcje." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Virtbase utilise des clés API pour fournir aux développeurs une interface simple et fiable pour les extensions, intégrations et systèmes automatisés. L'application Virtbase accède à ces clés pour activer les fonctionnalités correspondantes." } }
+      }
+    },
+    "Wähle den Server, der angezeigt werden soll." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Choose the server to display." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "选择要显示的服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scegli il server da visualizzare." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wybierz serwer do wyświetlenia." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Choisissez le serveur à afficher." } }
+      }
+    },
+    "Website" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Website" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "网站" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sito web" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Strona internetowa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Site web" } }
+      }
+    },
+    "Wert" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Value" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "值" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Valore" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wartość" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Valeur" } }
+      }
+    },
+    "Wiederherstellen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "恢复" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristina" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Przywróć" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Restaurer" } }
+      }
+    },
+    "Wird ausgesetzt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Suspending" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在挂起" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sospensione in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zawieszanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suspension en cours" } }
+      }
+    },
+    "Wird fortgesetzt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resuming" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在继续" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripresa in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wznawianie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Reprise en cours" } }
+      }
+    },
+    "Wird gestartet" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Starting" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在启动" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Avvio in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Uruchamianie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Démarrage en cours" } }
+      }
+    },
+    "Wird gestoppt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stopping" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在停止" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Arresto in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Zatrzymywanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêt en cours" } }
+      }
+    },
+    "Wird heruntergefahren" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Shutting Down" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在关机" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Spegnimento in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wyłączanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arrêt en cours" } }
+      }
+    },
+    "Wird pausiert" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pausing" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在暂停" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Messa in pausa in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstrzymywanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mise en pause en cours" } }
+      }
+    },
+    "Wird wiederhergestellt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restoring" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在恢复" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristino in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Przywracanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Restauration en cours" } }
+      }
+    },
+    "Wird zurückgesetzt" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Resetting" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "正在重置" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristino in corso" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Resetowanie" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réinitialisation en cours" } }
+      }
+    },
+    "Zeigt einen einzelnen Server an." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Displays a single server." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "显示单个服务器。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Mostra un singolo server." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wyświetla pojedynczy serwer." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Affiche un seul serveur." } }
+      }
+    },
+    "Zeit" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Time" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "时间" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tempo" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Czas" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Heure" } }
+      }
+    },
+    "Zielport" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Destination Port" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "目标端口" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Porta di destinazione" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Port docelowy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Port de destination" } }
+      }
+    },
+    "Zurück" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Back" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "返回" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Indietro" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstecz" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Retour" } }
+      }
+    },
+    "Zurücksetzen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reset" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重置" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Ripristina" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Resetuj" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réinitialiser" } }
+      }
+    },
+    "Zuweisung (Familie %lld)" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Assignment (Family %lld)" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "分配（系列 %lld）" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Assegnazione (famiglia %lld)" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Przypisanie (rodzina %lld)" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Attribution (famille %lld)" } }
+      }
+    }
   },
   "version" : "1.2"
 }

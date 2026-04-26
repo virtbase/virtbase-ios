@@ -35,36 +35,13 @@ struct FirewallOptions: Codable {
     }
     
     var enabled: Bool?
-    var ingoing: Action
-    var outgoing: Action
+    var ingoing: Action?
+    var outgoing: Action?
     
     enum CodingKeys: String, CodingKey {
         case enabled = "enabled"
         case ingoing = "policy_in"
         case outgoing = "policy_out"
-    }
-    
-    init(
-        enabled: Bool? = nil,
-        ingoing: Action,
-        outgoing: Action
-    ) {
-        self.enabled = enabled
-        self.ingoing = ingoing
-        self.outgoing = outgoing
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        enabled = try container.decodeIfPresent(Bool.self, forKey: .enabled)
-        ingoing = try container.decodeIfPresent(Action.self, forKey: .ingoing) ?? .accept
-        outgoing = try container.decodeIfPresent(Action.self, forKey: .outgoing) ?? .accept
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(ingoing, forKey: .ingoing)
-        try container.encode(outgoing, forKey: .outgoing)
     }
 }
 

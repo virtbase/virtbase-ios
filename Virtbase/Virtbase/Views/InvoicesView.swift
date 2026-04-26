@@ -59,6 +59,14 @@ struct InvoicesView: View {
                             }
                         }
                     }
+                    
+                    if invoices.isEmpty {
+                        Text("Keine Einträge")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                            .frame(maxWidth: .infinity)
+                            .padding(10)
+                    }
                 } else {
                     HandlerView(status: viewModel.status)
                 }

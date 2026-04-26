@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccentListView: View {
     
-    var label: String
+    var label: LocalizedStringResource
     var color: Color
     
     var body: some View {

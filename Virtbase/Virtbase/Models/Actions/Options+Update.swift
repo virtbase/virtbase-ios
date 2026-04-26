@@ -25,6 +25,16 @@
 import Foundation
 import Alamofire
 
+nonisolated struct FirewallOptionsUpdateRequest: Encodable {
+    let ingoing: FirewallOptions.Action?
+    let outgoing: FirewallOptions.Action?
+    
+    enum CodingKeys: String, CodingKey {
+        case ingoing = "policy_in"
+        case outgoing = "policy_out"
+    }
+}
+
 extension FirewallOptions {
     static func update(
         session: Session,
@@ -36,10 +46,15 @@ extension FirewallOptions {
             + "/servers/\(server.id)/firewall/options"
         )
         
+        let request = FirewallOptionsUpdateRequest(
+            ingoing: options.ingoing,
+            outgoing: options.outgoing
+        )
+        
         let _ = try await session.request(
             address,
             method: .put,
-            parameters: options,
+            parameters: request,
             encoder: JSONParameterEncoder.default
         )
         .validate()

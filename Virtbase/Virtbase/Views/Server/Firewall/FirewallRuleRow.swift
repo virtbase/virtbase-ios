@@ -50,7 +50,7 @@ struct FirewallRuleRow: View {
                     
                     Spacer(minLength: 0)
                     
-                    Text(rule.protocol?.rawValue ?? "Alle")
+                    Text(rule.protocol.rawValue)
                         .monospaced()
                         .font(.subheadline)
                 }
