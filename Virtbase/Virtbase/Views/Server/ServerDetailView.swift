@@ -41,6 +41,15 @@ struct ServerDetailView: View {
     
     @State private
     var displayConsole: Bool = false
+
+    @State private
+    var displayPasswordReset: Bool = false
+
+    @State private
+    var passwordResetUsername: String = "root"
+
+    @State private
+    var passwordResetPassword: String = ""
     
     var server: Server
     
@@ -248,6 +257,17 @@ struct ServerDetailView: View {
                         }
                         
                         Button {
+                            passwordResetUsername = "root"
+                            passwordResetPassword = ""
+                            displayPasswordReset.toggle()
+                        } label: {
+                            Label(
+                                "Passwort zurücksetzen",
+                                systemImage: "key.fill"
+                            )
+                        }
+
+                        Button {
                             Task {
                                 try await ServerState.update(
                                     session: authentication.session,
@@ -290,6 +310,37 @@ struct ServerDetailView: View {
         } message: {
             Text("Lege einen neuen Namen für deinen Server fest. Der Name darf nicht leer sein.")
         }
+        .alert("Passwort zurücksetzen", isPresented: $displayPasswordReset) {
+            TextField("Benutzername", text: $passwordResetUsername)
+                #if os(iOS)
+                .textInputAutocapitalization(.never)
+                #endif
+                .autocorrectionDisabled()
+                .monospaced()
+
+            SecureField("Passwort", text: $passwordResetPassword)
+                #if os(iOS)
+                .textInputAutocapitalization(.never)
+                #endif
+                .autocorrectionDisabled()
+
+            Button("Abbrechen", role: .cancel) {}
+            Button("Zurücksetzen", role: .destructive) {
+                Task {
+                    try await Server.resetPassword(
+                        session: authentication.session,
+                        server: server,
+                        username: passwordResetUsername.trimmingCharacters(
+                            in: .whitespacesAndNewlines
+                        ),
+                        password: passwordResetPassword
+                    )
+                }
+            }
+            .disabled(!isPasswordResetValid)
+        } message: {
+            Text("Lege ein neues Passwort für den angegebenen Benutzer fest.")
+        }
         #if os(iOS)
         .fullScreenCover(isPresented: $displayConsole) {
             ServerConsoleView(server: server)
@@ -316,5 +367,14 @@ struct ServerDetailView: View {
                 )
             }
         }
+    }
+
+    private var isPasswordResetValid: Bool {
+        let username = passwordResetUsername.trimmingCharacters(
+            in: .whitespacesAndNewlines
+        )
+
+        return (1...64).contains(username.count)
+            && !passwordResetPassword.isEmpty
     }
 }

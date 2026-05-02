@@ -370,6 +370,15 @@
         "fr" : { "stringUnit" : { "state" : "translated", "value" : "Autorisations" } }
       }
     },
+    "Benutzername" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Username" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "用户名" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nome utente" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Nazwa użytkownika" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nom d'utilisateur" } }
+      }
+    },
     "Bewerten" : {
       "localizations" : {
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Rate" } },
@@ -802,6 +811,15 @@
         "fr" : { "stringUnit" : { "state" : "translated", "value" : "Définissez un nouveau nom pour votre serveur. Le nom ne peut pas être vide." } }
       }
     },
+    "Lege ein neues Passwort für den angegebenen Benutzer fest." : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Set a new password for the specified user." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "为指定用户设置新密码。" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Imposta una nuova password per l'utente indicato." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Ustaw nowe hasło dla wskazanego użytkownika." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Définissez un nouveau mot de passe pour l'utilisateur indiqué." } }
+      }
+    },
     "Lesen" : {
       "localizations" : {
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Read" } },
@@ -1070,6 +1088,24 @@
         "it" : { "stringUnit" : { "state" : "translated", "value" : "Mette in pausa il server selezionato." } },
         "pl" : { "stringUnit" : { "state" : "translated", "value" : "Wstrzymuje wybrany serwer." } },
         "fr" : { "stringUnit" : { "state" : "translated", "value" : "Met en pause le serveur sélectionné." } }
+      }
+    },
+    "Passwort" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Password" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "密码" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Password" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Hasło" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mot de passe" } }
+      }
+    },
+    "Passwort zurücksetzen" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reset Password" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "重置密码" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Reimposta password" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Resetuj hasło" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réinitialiser le mot de passe" } }
       }
     },
     "Preise" : {
