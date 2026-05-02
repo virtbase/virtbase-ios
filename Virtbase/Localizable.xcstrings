@@ -2,22 +2,94 @@
   "sourceLanguage" : "de",
   "strings" : {
     "%.2f" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f"
+          }
+        }
+      },
       "shouldTranslate" : false
     },
     "%.2f €" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f €"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f €"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f €"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%.2f €"
+          }
+        }
+      },
       "shouldTranslate" : false
     },
     "%@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%@"
+          }
+        }
+      },
       "shouldTranslate" : false
     },
     "%@ Fortfahren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -46,12 +118,6 @@
     },
     "%@ Neustarten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restart %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -80,12 +146,6 @@
     },
     "%@ Pausieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pause %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -114,12 +174,6 @@
     },
     "%@ Starten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -148,12 +202,6 @@
     },
     "%@ Stoppen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -182,12 +230,6 @@
     },
     "%@ Suspendieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspend %@"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -215,16 +257,35 @@
       }
     },
     "€" : {
-      "shouldTranslate" : false
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "€"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "€"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "€"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "€"
+          }
+        }
+      }
     },
     "Abbrechen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancel"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -253,12 +314,6 @@
     },
     "Abgebrochen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancelled"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -287,12 +342,6 @@
     },
     "Ablehnen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deny"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -321,12 +370,6 @@
     },
     "Abmelden" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Logout"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -355,12 +398,6 @@
     },
     "Account" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Account"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -389,12 +426,6 @@
     },
     "Action" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Action"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -403,7 +434,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Action"
           }
         },
@@ -423,12 +454,6 @@
     },
     "Addresse" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Address"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -456,16 +481,35 @@
       }
     },
     "Adresse" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Address"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adres"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地址"
+          }
+        }
+      }
     },
     "Aktion" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Action"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -474,7 +518,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Action"
           }
         },
@@ -494,12 +538,6 @@
     },
     "Aktion auf Server ausführen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Run action on server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -528,12 +566,6 @@
     },
     "Aktiv" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Active"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -562,12 +594,6 @@
     },
     "Aktualisiert" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Updated"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -594,14 +620,64 @@
         }
       }
     },
-    "Akzeptieren" : {
+    "Akzent" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Accept"
+            "state" : "new",
+            "value" : "Accent"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Accent"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akcent"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "强调色"
+          }
+        }
+      }
+    },
+    "Akzentfarbe" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Accent Color"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur d'accent"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolor akcentu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "强调颜色"
+          }
+        }
+      }
+    },
+    "Akzeptieren" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -630,57 +706,34 @@
     },
     "Alamofire Software Foundation" : {
       "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alamofire Software Foundation"
-          }
-        }
-      },
-      "shouldTranslate" : false
-    },
-    "Alle" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todo"
+            "state" : "new",
+            "value" : "Alamofire Software Foundation"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tout"
+            "state" : "new",
+            "value" : "Alamofire Software Foundation"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wszystkie"
+            "state" : "new",
+            "value" : "Alamofire Software Foundation"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "全部"
+            "state" : "new",
+            "value" : "Alamofire Software Foundation"
           }
         }
       }
     },
     "Alle Anwendungsdaten löschen?" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete all application data?"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -707,48 +760,8 @@
         }
       }
     },
-    "Alle Daten auf dem Server werden gelöscht. Dies lässt sich nicht rückgangig machen." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All data on the server will be deleted. You cannot undo this."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todos los datos del servidor serán eliminados. Esta acción no se puede deshacer."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Toutes les données du serveur seront supprimées. Cette action est irréversible."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wszystkie dane na serwerze zostaną usunięte. Nie można tego cofnąć."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "服务器上的所有数据将被删除，此操作无法撤销。"
-          }
-        }
-      }
-    },
     "Alle Daten Löschen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete all data"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -777,12 +790,6 @@
     },
     "Alle lokalen Daten werden entfernt, und sie werden sofort abgemeldet. Dies lässt sich nicht rückgangig machen." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "All local data will be removed and you will be logged out. This cannot be undone."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -811,15 +818,9 @@
     },
     "Allgemein" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "General"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "General"
           }
         },
@@ -845,12 +846,6 @@
     },
     "Anfragefehler" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Request Error"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -879,12 +874,6 @@
     },
     "Anmelden" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Login"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -913,12 +902,6 @@
     },
     "Anwendung" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Application"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -927,7 +910,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Application"
           }
         },
@@ -947,12 +930,6 @@
     },
     "Ausgehend" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Outgoing"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -981,12 +958,6 @@
     },
     "Backup" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Backup"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1015,12 +986,6 @@
     },
     "Backup wird erstellt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Backup is being created"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1049,12 +1014,6 @@
     },
     "Backups" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Backups"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1076,19 +1035,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "备份"
+            "value" : "备份列表"
           }
         }
       }
     },
     "Bald Verfügbar" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Available Soon"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1117,12 +1070,6 @@
     },
     "Bearbeiten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1151,12 +1098,6 @@
     },
     "Bearbeitung" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Editing"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1166,13 +1107,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Édition"
+            "value" : "Modification"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Edycja"
+            "value" : "Edytowanie"
           }
         },
         "zh-Hans" : {
@@ -1185,12 +1126,6 @@
     },
     "Beenden" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Exit"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1219,12 +1154,6 @@
     },
     "Beinhaltete Lizenzen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Included Licences"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1253,12 +1182,6 @@
     },
     "Berechtigungen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permissions"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1285,14 +1208,36 @@
         }
       }
     },
-    "Bewerten" : {
+    "Benutzername" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rate"
+            "state" : "new",
+            "value" : "Username"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom d'utilisateur"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nazwa użytkownika"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用户名"
+          }
+        }
+      }
+    },
+    "Bewerten" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1302,7 +1247,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Évaluer"
+            "value" : "Noter"
           }
         },
         "pl" : {
@@ -1321,12 +1266,6 @@
     },
     "Bezahlt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paid"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1353,14 +1292,36 @@
         }
       }
     },
-    "Browser Öffnen" : {
+    "Blau" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open Browser"
+            "state" : "new",
+            "value" : "Blue"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleu"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niebieski"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "蓝色"
+          }
+        }
+      }
+    },
+    "Browser Öffnen" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1388,37 +1349,56 @@
       }
     },
     "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE." : {
-      "shouldTranslate" : false
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE."
+          }
+        }
+      }
     },
     "CPU" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CPU"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "CPU"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "CPU"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "CPU"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "CPU"
           }
         }
@@ -1426,12 +1406,6 @@
     },
     "Dashboard" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dashboard"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1460,12 +1434,6 @@
     },
     "Daten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Data"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1494,12 +1462,6 @@
     },
     "Deine Server konnten nicht geladen werden. Überprüfe deine Internetverbindung, oder ob du angemeldet bist." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your server data could not be loaded. Check your internet connection or whether you are logged in."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1528,12 +1490,6 @@
     },
     "Details" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Details"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1562,12 +1518,6 @@
     },
     "Die Anfrage an den Server ist fehlgeschlagen. Überprüfe ob du mit dem Internet verbunden bist oder dein Schlüssel alle benötigten Berechtigungen hat." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your request to the server has failed. Check your internet connection or whether your key has correct permissions."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1594,14 +1544,36 @@
         }
       }
     },
-    "Diese Berechtigungen sind notwendig, damit die Virtbase App ordnungsgemäß funktionieren kann. Das Entfernen oder Einschränken dieser Berechtigungen kann zu Fehlfunktionen der App führen und unauthentifizierte Anfragen verursachen." : {
+    "Die Keychain konnte nicht geleert werden. Bitte erneut versuchen oder die App neu installieren." : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "These permissions are required for the application to function."
+            "state" : "new",
+            "value" : "The Keychain could not be cleared. Please try again or reinstall the app."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le trousseau n'a pas pu être vidé. Veuillez réessayer ou réinstaller l'application."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie udało się wyczyścić pęku kluczy. Spróbuj ponownie lub zainstaluj aplikację ponownie."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法清除钥匙串。请重试或重新安装应用。"
+          }
+        }
+      }
+    },
+    "Diese Berechtigungen sind notwendig, damit die Virtbase App ordnungsgemäß funktionieren kann. Das Entfernen oder Einschränken dieser Berechtigungen kann zu Fehlfunktionen der App führen und unauthentifizierte Anfragen verursachen." : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1630,33 +1602,27 @@
     },
     "Discord" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Discord"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Discord"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Discord"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Discord"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Discord"
           }
         }
@@ -1664,12 +1630,6 @@
     },
     "Du hast noch keine Server in deinem Account hinzugefügt. Öffne Virtbase, um deinen ersten Server einzurichten." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "You haven't added any servers to your account yet. Open Virtbase to set up your first server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1679,7 +1639,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vous n'avez pas encore ajouté de serveur à votre compte. Ouvrez Virtbase pour configurer votre premier serveur."
+            "value" : "Vous n'avez encore ajouté aucun serveur à votre compte. Ouvrez Virtbase pour configurer votre premier serveur."
           }
         },
         "pl" : {
@@ -1691,19 +1651,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您尚未在账户中添加任何服务器。打开 Virtbase 来设置您的第一台服务器。"
+            "value" : "您还没有向账户添加任何服务器。打开 Virtbase 来设置您的第一台服务器。"
           }
         }
       }
     },
     "E-Mail" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E-Mail"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1732,12 +1686,6 @@
     },
     "Einfügen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1766,12 +1714,6 @@
     },
     "Eingehend" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incoming"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1800,12 +1742,6 @@
     },
     "Einstellungen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Settings"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1834,12 +1770,6 @@
     },
     "Eintrag" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entry"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1868,12 +1798,6 @@
     },
     "Einträge" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Entries"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1895,19 +1819,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "条目"
+            "value" : "条目列表"
           }
         }
       }
     },
     "Entsperren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlock"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1936,12 +1854,6 @@
     },
     "Erstellen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Create"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1970,12 +1882,6 @@
     },
     "Erstellt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Created"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2002,14 +1908,36 @@
         }
       }
     },
-    "Fehlgeschlagen" : {
+    "Farben" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed"
+            "state" : "new",
+            "value" : "Colors"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleurs"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolory"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "颜色"
+          }
+        }
+      }
+    },
+    "Fehlgeschlagen" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2025,7 +1953,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nie powiodło się"
+            "value" : "Niepowodzenie"
           }
         },
         "zh-Hans" : {
@@ -2038,12 +1966,6 @@
     },
     "Fertig" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Done"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2053,7 +1975,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Terminer"
+            "value" : "Terminé"
           }
         },
         "pl" : {
@@ -2072,12 +1994,6 @@
     },
     "Festplatte" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disk"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2106,12 +2022,6 @@
     },
     "Firewall" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Firewall"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2127,7 +2037,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zapora"
+            "value" : "Zapora sieciowa"
           }
         },
         "zh-Hans" : {
@@ -2140,12 +2050,6 @@
     },
     "Fortfahren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2174,12 +2078,6 @@
     },
     "Gateway" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gateway"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2208,12 +2106,6 @@
     },
     "Gesendet" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sent"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2242,12 +2134,6 @@
     },
     "Gestoppt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stopped"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2274,14 +2160,36 @@
         }
       }
     },
-    "Halte das Widget gedrückt, um einen Server auszuwählen." : {
+    "Grün" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Long press the widget to select a server."
+            "state" : "new",
+            "value" : "Green"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vert"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zielony"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绿色"
+          }
+        }
+      }
+    },
+    "Halte das Widget gedrückt, um einen Server auszuwählen." : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2310,12 +2218,6 @@
     },
     "Herunterladen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Download"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2344,15 +2246,9 @@
     },
     "Host" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Host"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Host"
           }
         },
@@ -2364,7 +2260,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Host"
           }
         },
@@ -2378,12 +2274,6 @@
     },
     "ICMP-Typ" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ICMP Type"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2412,12 +2302,6 @@
     },
     "Ignorieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ignore"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2446,12 +2330,6 @@
     },
     "Keine Daten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No Data"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2480,12 +2358,6 @@
     },
     "Keine Einträge" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No Entries"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2514,12 +2386,6 @@
     },
     "Keine Server" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No Servers"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2548,12 +2414,6 @@
     },
     "Kommentar" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Comment"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2582,12 +2442,6 @@
     },
     "Konsole" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Console"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2596,7 +2450,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Console"
           }
         },
@@ -2616,33 +2470,27 @@
     },
     "KVM" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "KVM"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "KVM"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "KVM"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "KVM"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "KVM"
           }
         }
@@ -2650,12 +2498,6 @@
     },
     "Land" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Country"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2684,12 +2526,6 @@
     },
     "Läuft" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Running"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2705,7 +2541,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uruchomiony"
+            "value" : "Działa"
           }
         },
         "zh-Hans" : {
@@ -2718,12 +2554,6 @@
     },
     "Lege einen neuen Namen für deinen Server fest. Der Name darf nicht leer sein." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Set a new name for your server. The name must not be empty."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2745,19 +2575,41 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "为服务器设置新名称，名称不能为空。"
+            "value" : "为您的服务器设置新名称。名称不能为空。"
+          }
+        }
+      }
+    },
+    "Lege ein neues Passwort für den angegebenen Benutzer fest." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Set a new password for the specified user."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définissez un nouveau mot de passe pour l'utilisateur indiqué."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ustaw nowe hasło dla wskazanego użytkownika."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为指定用户设置新密码。"
           }
         }
       }
     },
     "Lesen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Read"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2786,12 +2638,6 @@
     },
     "Lizenzen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Licenses"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2820,12 +2666,6 @@
     },
     "Löschen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2852,14 +2692,36 @@
         }
       }
     },
-    "Mail & Passwort" : {
+    "Löschen fehlgeschlagen" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Email & Password"
+            "state" : "new",
+            "value" : "Deletion Failed"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échec de la suppression"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuwanie nie powiodło się"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除失败"
+          }
+        }
+      }
+    },
+    "Mail & Passwort" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2875,7 +2737,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "E-Mail i hasło"
+            "value" : "E-mail i hasło"
           }
         },
         "zh-Hans" : {
@@ -2888,12 +2750,6 @@
     },
     "Mehr Optionen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "More Options"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2922,12 +2778,6 @@
     },
     "Meine Server" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "My Servers"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2956,12 +2806,6 @@
     },
     "Metrik" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Metric"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2988,14 +2832,36 @@
         }
       }
     },
-    "Mit diesem Widget kannst du dir deine Server als Übersicht hinzufügen." : {
+    "Minze" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "With this widget you can add your servers as an overview."
+            "state" : "new",
+            "value" : "Mint"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menthe"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miętowy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "薄荷绿"
+          }
+        }
+      }
+    },
+    "Mit diesem Widget kannst du dir deine Server als Übersicht hinzufügen." : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3024,12 +2890,6 @@
     },
     "Name" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Name"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3058,12 +2918,6 @@
     },
     "Name Bearbeiten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit Name"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3091,16 +2945,35 @@
       }
     },
     "NameServer" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Name Server"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serveur de noms"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serwer nazw"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "域名服务器"
+          }
+        }
+      }
     },
     "Neue Regel" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Rule"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3129,12 +3002,6 @@
     },
     "Neuer Eintrag" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "New Entry"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3162,16 +3029,35 @@
       }
     },
     "Neues Backup" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "New Backup"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle sauvegarde"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nowa kopia zapasowa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新建备份"
+          }
+        }
+      }
     },
     "Neustart läuft" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restarting"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3187,7 +3073,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ponowne uruchamianie"
+            "value" : "Trwa ponowne uruchamianie"
           }
         },
         "zh-Hans" : {
@@ -3200,12 +3086,6 @@
     },
     "Neustarten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restart"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3234,12 +3114,6 @@
     },
     "Nicht angemeldet" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Not Logged In"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3268,12 +3142,6 @@
     },
     "Node" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Node"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3302,12 +3170,6 @@
     },
     "Offline" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Offline"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3322,7 +3184,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Offline"
           }
         },
@@ -3336,12 +3198,6 @@
     },
     "Öffnet die Virtbase App." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Opens the Virtbase App."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3368,14 +3224,36 @@
         }
       }
     },
-    "Online" : {
+    "OK" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Online"
+            "state" : "new",
+            "value" : "OK"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OK"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OK"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的"
+          }
+        }
+      }
+    },
+    "Online" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3390,7 +3268,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Online"
           }
         },
@@ -3404,12 +3282,6 @@
     },
     "Optionen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Options"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3418,7 +3290,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Options"
           }
         },
@@ -3436,14 +3308,36 @@
         }
       }
     },
-    "Pause" : {
+    "Orange" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pause"
+            "state" : "new",
+            "value" : "Orange"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Orange"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pomarańczowy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "橙色"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3452,7 +3346,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Pause"
           }
         },
@@ -3472,12 +3366,6 @@
     },
     "Pausieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pause"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3506,12 +3394,6 @@
     },
     "Pausiert" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paused"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3540,12 +3422,6 @@
     },
     "Pausiert den ausgewählten Server." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pauses the selected server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3572,14 +3448,64 @@
         }
       }
     },
-    "Preise" : {
+    "Passwort" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prices"
+            "state" : "new",
+            "value" : "Password"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mot de passe"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hasło"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码"
+          }
+        }
+      }
+    },
+    "Passwort zurücksetzen" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reset Password"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réinitialiser le mot de passe"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetuj hasło"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重置密码"
+          }
+        }
+      }
+    },
+    "Preise" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3608,12 +3534,6 @@
     },
     "Protokoll" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Protocol"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3642,12 +3562,6 @@
     },
     "Quellport" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Source Port"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3676,27 +3590,21 @@
     },
     "RAM" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "RAM"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "RAM"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "RAM"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "RAM"
           }
         },
@@ -3710,46 +3618,34 @@
     },
     "rDNS" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "rDNS"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "rDNS"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "rDNS"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "rDNS"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "rDNS"
+            "value" : "反向 DNS"
           }
         }
       }
     },
     "Reboot" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reboot"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3771,19 +3667,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重启"
+            "value" : "重新启动"
           }
         }
       }
     },
     "Rechenzentrum" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Data Center"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3812,12 +3702,6 @@
     },
     "Rechnungen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Invoices"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3846,12 +3730,6 @@
     },
     "Regel" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rule"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3880,12 +3758,6 @@
     },
     "Regel bearbeiten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Edit Rule"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3914,12 +3786,6 @@
     },
     "Regeln" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rules"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3941,19 +3807,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "规则"
+            "value" : "规则列表"
           }
         }
       }
     },
     "Reset" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reset"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3982,12 +3842,6 @@
     },
     "Resume" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resume"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4009,19 +3863,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "恢复"
+            "value" : "继续"
           }
         }
       }
     },
     "Richtung" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Direction"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4030,7 +3878,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Direction"
           }
         },
@@ -4048,14 +3896,36 @@
         }
       }
     },
-    "Schlüssel" : {
+    "Rot" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Key"
+            "state" : "new",
+            "value" : "Red"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rouge"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czerwony"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "红色"
+          }
+        }
+      }
+    },
+    "Schlüssel" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4084,12 +3954,6 @@
     },
     "Schreiben" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4118,12 +3982,6 @@
     },
     "Server" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4150,48 +4008,8 @@
         }
       }
     },
-    "Server '%@' löschen?" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete server '%@'?"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Eliminar el servidor '%@'?"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Supprimer le serveur « %@ » ?"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Usunąć serwer '%@'?"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "删除服务器201c%@201d？"
-          }
-        }
-      }
-    },
     "Server Action" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Server Action"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4201,7 +4019,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Action serveur"
+            "value" : "Action du serveur"
           }
         },
         "pl" : {
@@ -4220,12 +4038,6 @@
     },
     "Server auswählen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4254,12 +4066,6 @@
     },
     "Server Auswählen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select Server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4288,12 +4094,6 @@
     },
     "Server fortfahren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resume server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4315,19 +4115,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "恢复服务器"
+            "value" : "继续服务器"
           }
         }
       }
     },
     "Server neustarten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restart server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4356,12 +4150,6 @@
     },
     "Server pausieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pause server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4371,7 +4159,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mettre en pause le serveur"
+            "value" : "Mettre le serveur en pause"
           }
         },
         "pl" : {
@@ -4390,12 +4178,6 @@
     },
     "Server starten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4424,12 +4206,6 @@
     },
     "Server stoppen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4458,12 +4234,6 @@
     },
     "Server suspendieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspend server"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4492,12 +4262,6 @@
     },
     "Setzt den ausgewählten Server fort." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resumes the selected server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4519,19 +4283,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "恢复所选服务器。"
+            "value" : "继续所选服务器。"
           }
         }
       }
     },
     "Shutdown" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shutdown"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4559,16 +4317,35 @@
       }
     },
     "sk_live_…" : {
-      "shouldTranslate" : false
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sk_live_…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sk_live_…"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sk_live_…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "sk_live_…"
+          }
+        }
+      }
     },
     "Snapshot" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Snapshot"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4597,12 +4374,6 @@
     },
     "Speichern" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4631,12 +4402,6 @@
     },
     "Sperren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lock"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4663,14 +4428,36 @@
         }
       }
     },
-    "Start" : {
+    "Standard" : {
       "localizations" : {
-        "en" : {
+        "es" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start"
+            "state" : "new",
+            "value" : "Default"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Par défaut"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domyślny"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4680,12 +4467,12 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Démarrer"
+            "value" : "Démarrage"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Start"
           }
         },
@@ -4699,12 +4486,6 @@
     },
     "Starten" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4733,12 +4514,6 @@
     },
     "Startet den ausgewählten Server neu." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restarts the selected server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4767,12 +4542,6 @@
     },
     "Startet den ausgewählten Server." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Starts the selected server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4801,12 +4570,6 @@
     },
     "Steuer" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tax"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4828,19 +4591,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "税"
+            "value" : "税费"
           }
         }
       }
     },
     "Stop" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4850,7 +4607,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Arrêter"
+            "value" : "Arrêt"
           }
         },
         "pl" : {
@@ -4869,12 +4626,6 @@
     },
     "Stoppen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stop"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4903,12 +4654,6 @@
     },
     "Stoppt den ausgewählten Server." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stops the selected server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4937,12 +4682,6 @@
     },
     "Suspend" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspend"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4971,12 +4710,6 @@
     },
     "Suspendieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspend"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5005,12 +4738,6 @@
     },
     "Suspendiert" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspended"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5039,12 +4766,6 @@
     },
     "Suspendiert den ausgewählten Server." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspends the selected server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5073,21 +4794,15 @@
     },
     "Total" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Total"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Total"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Total"
           }
         },
@@ -5100,19 +4815,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "合计"
+            "value" : "总计"
           }
         }
       }
     },
     "Unbekannt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unknown"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5141,12 +4850,6 @@
     },
     "Verifizieren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verify"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5162,7 +4865,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Weryfikuj"
+            "value" : "Zweryfikuj"
           }
         },
         "zh-Hans" : {
@@ -5175,33 +4878,27 @@
     },
     "Virtbase" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Virtbase"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase"
           }
         }
@@ -5209,33 +4906,27 @@
     },
     "Virtbase OAuth" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Virtbase OAuth"
-          }
-        },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase OAuth"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase OAuth"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase OAuth"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Virtbase OAuth"
           }
         }
@@ -5243,12 +4934,6 @@
     },
     "Virtbase öffnen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Open Virtbase"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5277,12 +4962,6 @@
     },
     "Virtbase Schlüssel" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Virtbase Key"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5311,12 +4990,6 @@
     },
     "Virtbase verwendet sogenannte API-Schlüssel, um Entwicklern eine einfache und zuverlässige Schnittstelle für Erweiterungen, Integrationen und automatisierte Systeme bereitzustellen. Die Virtbase App greift auf diese Schlüssel zu, um entsprechende Funktionen zu ermöglichen." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Virtbase uses API keys to provide developers with a simple and reliable interface for extensions, integrations, and automated systems. The Virtbase App uses these keys to enable the corresponding features."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5345,12 +5018,6 @@
     },
     "Wähle den Server, der angezeigt werden soll." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select the server to display."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5379,12 +5046,6 @@
     },
     "Website" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Website"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5413,12 +5074,6 @@
     },
     "Wert" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Value"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5447,12 +5102,6 @@
     },
     "Wiederherstellen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restore"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5481,12 +5130,6 @@
     },
     "Wird ausgesetzt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suspending"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5515,12 +5158,6 @@
     },
     "Wird fortgesetzt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resuming"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5542,19 +5179,13 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "正在恢复"
+            "value" : "正在继续"
           }
         }
       }
     },
     "Wird gestartet" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Starting"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5583,12 +5214,6 @@
     },
     "Wird gestoppt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stopping"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5617,12 +5242,6 @@
     },
     "Wird heruntergefahren" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shutting down"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5651,12 +5270,6 @@
     },
     "Wird pausiert" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pausing"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5685,12 +5298,6 @@
     },
     "Wird wiederhergestellt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Restoring"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5719,12 +5326,6 @@
     },
     "Wird zurückgesetzt" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Resetting"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5753,12 +5354,6 @@
     },
     "Zeigt einen einzelnen Server an." : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Shows a single server."
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5787,12 +5382,6 @@
     },
     "Zeit" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Time"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5821,12 +5410,6 @@
     },
     "Zielport" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Destination Port"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5855,12 +5438,6 @@
     },
     "Zurück" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Back"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5889,12 +5466,6 @@
     },
     "Zurücksetzen" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reset"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5923,12 +5494,6 @@
     },
     "Zuweisung (Familie %lld)" : {
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Assignment (Family %lld)"
-          }
-        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5956,5 +5521,5 @@
       }
     }
   },
-  "version" : "1.1"
+  "version" : "1.2"
 }
